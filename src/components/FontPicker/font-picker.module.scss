@@ -1,0 +1,38 @@
+.container {
+    position: relative;
+    pointer-events: auto;
+    cursor: pointer !important;
+    &::before {
+        content: attr(data-message);
+        height: 100%;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 8px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+        justify-content: center;
+        background-color: var(--primary-light-0);
+        border: 1px solid var(--line-color);
+        pointer-events: none;
+        cursor: pointer !important;
+        color: var(--primary);
+        transition: all .25s;
+    }
+    &:hover {
+        &::before {
+            color: var(--background);
+            transition: all .25s;
+            border: 1px solid var(--primary);
+            background-color: var(--primary);
+        }
+    }
+}
+
+.input {
+    height: 100%;
+    width: 100%;
+}

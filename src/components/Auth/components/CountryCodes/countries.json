@@ -1,0 +1,1202 @@
+[
+    {
+        "name": "Afghanistan",
+        "code": "AF / AFG",
+        "tel": "93"
+    },
+    {
+        "name": "Albania",
+        "code": "AL / ALB",
+        "tel": "355"
+    },
+    {
+        "name": "Algeria",
+        "code": "DZ / DZA",
+        "tel": "213"
+    },
+    {
+        "name": "American Samoa",
+        "code": "AS / ASM",
+        "tel": "1-684"
+    },
+    {
+        "name": "Andorra",
+        "code": "AD / AND",
+        "tel": "376"
+    },
+    {
+        "name": "Angola",
+        "code": "AO / AGO",
+        "tel": "244"
+    },
+    {
+        "name": "Anguilla",
+        "code": "AI / AIA",
+        "tel": "1-264"
+    },
+    {
+        "name": "Antarctica",
+        "code": "AQ / ATA",
+        "tel": "672"
+    },
+    {
+        "name": "Antigua and Barbuda",
+        "code": "AG / ATG",
+        "tel": "1-268"
+    },
+    {
+        "name": "Argentina",
+        "code": "AR / ARG",
+        "tel": "54"
+    },
+    {
+        "name": "Armenia",
+        "code": "AM / ARM",
+        "tel": "374"
+    },
+    {
+        "name": "Aruba",
+        "code": "AW / ABW",
+        "tel": "297"
+    },
+    {
+        "name": "Australia",
+        "code": "AU / AUS",
+        "tel": "61"
+    },
+    {
+        "name": "Austria",
+        "code": "AT / AUT",
+        "tel": "43"
+    },
+    {
+        "name": "Azerbaijan",
+        "code": "AZ / AZE",
+        "tel": "994"
+    },
+    {
+        "name": "Bahamas",
+        "code": "BS / BHS",
+        "tel": "1-242"
+    },
+    {
+        "name": "Bahrain",
+        "code": "BH / BHR",
+        "tel": "973"
+    },
+    {
+        "name": "Bangladesh",
+        "code": "BD / BGD",
+        "tel": "880"
+    },
+    {
+        "name": "Barbados",
+        "code": "BB / BRB",
+        "tel": "1-246"
+    },
+    {
+        "name": "Belarus",
+        "code": "BY / BLR",
+        "tel": "375"
+    },
+    {
+        "name": "Belgium",
+        "code": "BE / BEL",
+        "tel": "32"
+    },
+    {
+        "name": "Belize",
+        "code": "BZ / BLZ",
+        "tel": "501"
+    },
+    {
+        "name": "Benin",
+        "code": "BJ / BEN",
+        "tel": "229"
+    },
+    {
+        "name": "Bermuda",
+        "code": "BM / BMU",
+        "tel": "1-441"
+    },
+    {
+        "name": "Bhutan",
+        "code": "BT / BTN",
+        "tel": "975"
+    },
+    {
+        "name": "Bolivia",
+        "code": "BO / BOL",
+        "tel": "591"
+    },
+    {
+        "name": "Bosnia and Herzegovina",
+        "code": "BA / BIH",
+        "tel": "387"
+    },
+    {
+        "name": "Botswana",
+        "code": "BW / BWA",
+        "tel": "267"
+    },
+    {
+        "name": "Brazil",
+        "code": "BR / BRA",
+        "tel": "55"
+    },
+    {
+        "name": "British Indian Ocean Territory",
+        "code": "IO / IOT",
+        "tel": "246"
+    },
+    {
+        "name": "British Virgin Islands",
+        "code": "VG / VGB",
+        "tel": "1-284"
+    },
+    {
+        "name": "Brunei",
+        "code": "BN / BRN",
+        "tel": "673"
+    },
+    {
+        "name": "Bulgaria",
+        "code": "BG / BGR",
+        "tel": "359"
+    },
+    {
+        "name": "Burkina Faso",
+        "code": "BF / BFA",
+        "tel": "226"
+    },
+    {
+        "name": "Burundi",
+        "code": "BI / BDI",
+        "tel": "257"
+    },
+    {
+        "name": "Cambodia",
+        "code": "KH / KHM",
+        "tel": "855"
+    },
+    {
+        "name": "Cameroon",
+        "code": "CM / CMR",
+        "tel": "237"
+    },
+    {
+        "name": "Canada",
+        "code": "CA / CAN",
+        "tel": "1"
+    },
+    {
+        "name": "Cape Verde",
+        "code": "CV / CPV",
+        "tel": "238"
+    },
+    {
+        "name": "Cayman Islands",
+        "code": "KY / CYM",
+        "tel": "1-345"
+    },
+    {
+        "name": "Central African Republic",
+        "code": "CF / CAF",
+        "tel": "236"
+    },
+    {
+        "name": "Chad",
+        "code": "TD / TCD",
+        "tel": "235"
+    },
+    {
+        "name": "Chile",
+        "code": "CL / CHL",
+        "tel": "56"
+    },
+    {
+        "name": "China",
+        "code": "CN / CHN",
+        "tel": "86"
+    },
+    {
+        "name": "Christmas Island",
+        "code": "CX / CXR",
+        "tel": "61"
+    },
+    {
+        "name": "Cocos Islands",
+        "code": "CC / CCK",
+        "tel": "61"
+    },
+    {
+        "name": "Colombia",
+        "code": "CO / COL",
+        "tel": "57"
+    },
+    {
+        "name": "Comoros",
+        "code": "KM / COM",
+        "tel": "269"
+    },
+    {
+        "name": "Cook Islands",
+        "code": "CK / COK",
+        "tel": "682"
+    },
+    {
+        "name": "Costa Rica",
+        "code": "CR / CRI",
+        "tel": "506"
+    },
+    {
+        "name": "Croatia",
+        "code": "HR / HRV",
+        "tel": "385"
+    },
+    {
+        "name": "Cuba",
+        "code": "CU / CUB",
+        "tel": "53"
+    },
+    {
+        "name": "Curacao",
+        "code": "CW / CUW",
+        "tel": "599"
+    },
+    {
+        "name": "Cyprus",
+        "code": "CY / CYP",
+        "tel": "357"
+    },
+    {
+        "name": "Czech Republic",
+        "code": "CZ / CZE",
+        "tel": "420"
+    },
+    {
+        "name": "Democratic Republic of the Congo",
+        "code": "CD / COD",
+        "tel": "243"
+    },
+    {
+        "name": "Denmark",
+        "code": "DK / DNK",
+        "tel": "45"
+    },
+    {
+        "name": "Djibouti",
+        "code": "DJ / DJI",
+        "tel": "253"
+    },
+    {
+        "name": "Dominica",
+        "code": "DM / DMA",
+        "tel": "1-767"
+    },
+    {
+        "name": "Dominican Republic",
+        "code": "DO / DOM",
+        "tel": "1-809, 1-829, 1-849"
+    },
+    {
+        "name": "East Timor",
+        "code": "TL / TLS",
+        "tel": "670"
+    },
+    {
+        "name": "Ecuador",
+        "code": "EC / ECU",
+        "tel": "593"
+    },
+    {
+        "name": "Egypt",
+        "code": "EG / EGY",
+        "tel": "20"
+    },
+    {
+        "name": "El Salvador",
+        "code": "SV / SLV",
+        "tel": "503"
+    },
+    {
+        "name": "Equatorial Guinea",
+        "code": "GQ / GNQ",
+        "tel": "240"
+    },
+    {
+        "name": "Eritrea",
+        "code": "ER / ERI",
+        "tel": "291"
+    },
+    {
+        "name": "Estonia",
+        "code": "EE / EST",
+        "tel": "372"
+    },
+    {
+        "name": "Ethiopia",
+        "code": "ET / ETH",
+        "tel": "251"
+    },
+    {
+        "name": "Falkland Islands",
+        "code": "FK / FLK",
+        "tel": "500"
+    },
+    {
+        "name": "Faroe Islands",
+        "code": "FO / FRO",
+        "tel": "298"
+    },
+    {
+        "name": "Fiji",
+        "code": "FJ / FJI",
+        "tel": "679"
+    },
+    {
+        "name": "Finland",
+        "code": "FI / FIN",
+        "tel": "358"
+    },
+    {
+        "name": "France",
+        "code": "FR / FRA",
+        "tel": "33"
+    },
+    {
+        "name": "French Polynesia",
+        "code": "PF / PYF",
+        "tel": "689"
+    },
+    {
+        "name": "Gabon",
+        "code": "GA / GAB",
+        "tel": "241"
+    },
+    {
+        "name": "Gambia",
+        "code": "GM / GMB",
+        "tel": "220"
+    },
+    {
+        "name": "Georgia",
+        "code": "GE / GEO",
+        "tel": "995"
+    },
+    {
+        "name": "Germany",
+        "code": "DE / DEU",
+        "tel": "49"
+    },
+    {
+        "name": "Ghana",
+        "code": "GH / GHA",
+        "tel": "233"
+    },
+    {
+        "name": "Gibraltar",
+        "code": "GI / GIB",
+        "tel": "350"
+    },
+    {
+        "name": "Greece",
+        "code": "GR / GRC",
+        "tel": "30"
+    },
+    {
+        "name": "Greenland",
+        "code": "GL / GRL",
+        "tel": "299"
+    },
+    {
+        "name": "Grenada",
+        "code": "GD / GRD",
+        "tel": "1-473"
+    },
+    {
+        "name": "Guam",
+        "code": "GU / GUM",
+        "tel": "1-671"
+    },
+    {
+        "name": "Guatemala",
+        "code": "GT / GTM",
+        "tel": "502"
+    },
+    {
+        "name": "Guernsey",
+        "code": "GG / GGY",
+        "tel": "44-1481"
+    },
+    {
+        "name": "Guinea",
+        "code": "GN / GIN",
+        "tel": "224"
+    },
+    {
+        "name": "Guinea-Bissau",
+        "code": "GW / GNB",
+        "tel": "245"
+    },
+    {
+        "name": "Guyana",
+        "code": "GY / GUY",
+        "tel": "592"
+    },
+    {
+        "name": "Haiti",
+        "code": "HT / HTI",
+        "tel": "509"
+    },
+    {
+        "name": "Honduras",
+        "code": "HN / HND",
+        "tel": "504"
+    },
+    {
+        "name": "Hong Kong",
+        "code": "HK / HKG",
+        "tel": "852"
+    },
+    {
+        "name": "Hungary",
+        "code": "HU / HUN",
+        "tel": "36"
+    },
+    {
+        "name": "Iceland",
+        "code": "IS / ISL",
+        "tel": "354"
+    },
+    {
+        "name": "India",
+        "code": "IN / IND",
+        "tel": "91"
+    },
+    {
+        "name": "Indonesia",
+        "code": "ID / IDN",
+        "tel": "62"
+    },
+    {
+        "name": "Iran",
+        "code": "IR / IRN",
+        "tel": "98"
+    },
+    {
+        "name": "Iraq",
+        "code": "IQ / IRQ",
+        "tel": "964"
+    },
+    {
+        "name": "Ireland",
+        "code": "IE / IRL",
+        "tel": "353"
+    },
+    {
+        "name": "Isle of Man",
+        "code": "IM / IMN",
+        "tel": "44-1624"
+    },
+    {
+        "name": "Israel",
+        "code": "IL / ISR",
+        "tel": "972"
+    },
+    {
+        "name": "Italy",
+        "code": "IT / ITA",
+        "tel": "39"
+    },
+    {
+        "name": "Ivory Coast",
+        "code": "CI / CIV",
+        "tel": "225"
+    },
+    {
+        "name": "Jamaica",
+        "code": "JM / JAM",
+        "tel": "1-876"
+    },
+    {
+        "name": "Japan",
+        "code": "JP / JPN",
+        "tel": "81"
+    },
+    {
+        "name": "Jersey",
+        "code": "JE / JEY",
+        "tel": "44-1534"
+    },
+    {
+        "name": "Jordan",
+        "code": "JO / JOR",
+        "tel": "962"
+    },
+    {
+        "name": "Kazakhstan",
+        "code": "KZ / KAZ",
+        "tel": "7"
+    },
+    {
+        "name": "Kenya",
+        "code": "KE / KEN",
+        "tel": "254"
+    },
+    {
+        "name": "Kiribati",
+        "code": "KI / KIR",
+        "tel": "686"
+    },
+    {
+        "name": "Kosovo",
+        "code": "XK / XKX",
+        "tel": "383"
+    },
+    {
+        "name": "Kuwait",
+        "code": "KW / KWT",
+        "tel": "965"
+    },
+    {
+        "name": "Kyrgyzstan",
+        "code": "KG / KGZ",
+        "tel": "996"
+    },
+    {
+        "name": "Laos",
+        "code": "LA / LAO",
+        "tel": "856"
+    },
+    {
+        "name": "Latvia",
+        "code": "LV / LVA",
+        "tel": "371"
+    },
+    {
+        "name": "Lebanon",
+        "code": "LB / LBN",
+        "tel": "961"
+    },
+    {
+        "name": "Lesotho",
+        "code": "LS / LSO",
+        "tel": "266"
+    },
+    {
+        "name": "Liberia",
+        "code": "LR / LBR",
+        "tel": "231"
+    },
+    {
+        "name": "Libya",
+        "code": "LY / LBY",
+        "tel": "218"
+    },
+    {
+        "name": "Liechtenstein",
+        "code": "LI / LIE",
+        "tel": "423"
+    },
+    {
+        "name": "Lithuania",
+        "code": "LT / LTU",
+        "tel": "370"
+    },
+    {
+        "name": "Luxembourg",
+        "code": "LU / LUX",
+        "tel": "352"
+    },
+    {
+        "name": "Macau",
+        "code": "MO / MAC",
+        "tel": "853"
+    },
+    {
+        "name": "Macedonia",
+        "code": "MK / MKD",
+        "tel": "389"
+    },
+    {
+        "name": "Madagascar",
+        "code": "MG / MDG",
+        "tel": "261"
+    },
+    {
+        "name": "Malawi",
+        "code": "MW / MWI",
+        "tel": "265"
+    },
+    {
+        "name": "Malaysia",
+        "code": "MY / MYS",
+        "tel": "60"
+    },
+    {
+        "name": "Maldives",
+        "code": "MV / MDV",
+        "tel": "960"
+    },
+    {
+        "name": "Mali",
+        "code": "ML / MLI",
+        "tel": "223"
+    },
+    {
+        "name": "Malta",
+        "code": "MT / MLT",
+        "tel": "356"
+    },
+    {
+        "name": "Marshall Islands",
+        "code": "MH / MHL",
+        "tel": "692"
+    },
+    {
+        "name": "Mauritania",
+        "code": "MR / MRT",
+        "tel": "222"
+    },
+    {
+        "name": "Mauritius",
+        "code": "MU / MUS",
+        "tel": "230"
+    },
+    {
+        "name": "Mayotte",
+        "code": "YT / MYT",
+        "tel": "262"
+    },
+    {
+        "name": "Mexico",
+        "code": "MX / MEX",
+        "tel": "52"
+    },
+    {
+        "name": "Micronesia",
+        "code": "FM / FSM",
+        "tel": "691"
+    },
+    {
+        "name": "Moldova",
+        "code": "MD / MDA",
+        "tel": "373"
+    },
+    {
+        "name": "Monaco",
+        "code": "MC / MCO",
+        "tel": "377"
+    },
+    {
+        "name": "Mongolia",
+        "code": "MN / MNG",
+        "tel": "976"
+    },
+    {
+        "name": "Montenegro",
+        "code": "ME / MNE",
+        "tel": "382"
+    },
+    {
+        "name": "Montserrat",
+        "code": "MS / MSR",
+        "tel": "1-664"
+    },
+    {
+        "name": "Morocco",
+        "code": "MA / MAR",
+        "tel": "212"
+    },
+    {
+        "name": "Mozambique",
+        "code": "MZ / MOZ",
+        "tel": "258"
+    },
+    {
+        "name": "Myanmar",
+        "code": "MM / MMR",
+        "tel": "95"
+    },
+    {
+        "name": "Namibia",
+        "code": "NA / NAM",
+        "tel": "264"
+    },
+    {
+        "name": "Nauru",
+        "code": "NR / NRU",
+        "tel": "674"
+    },
+    {
+        "name": "Nepal",
+        "code": "NP / NPL",
+        "tel": "977"
+    },
+    {
+        "name": "Netherlands",
+        "code": "NL / NLD",
+        "tel": "31"
+    },
+    {
+        "name": "Netherlands Antilles",
+        "code": "AN / ANT",
+        "tel": "599"
+    },
+    {
+        "name": "New Caledonia",
+        "code": "NC / NCL",
+        "tel": "687"
+    },
+    {
+        "name": "New Zealand",
+        "code": "NZ / NZL",
+        "tel": "64"
+    },
+    {
+        "name": "Nicaragua",
+        "code": "NI / NIC",
+        "tel": "505"
+    },
+    {
+        "name": "Niger",
+        "code": "NE / NER",
+        "tel": "227"
+    },
+    {
+        "name": "Nigeria",
+        "code": "NG / NGA",
+        "tel": "234"
+    },
+    {
+        "name": "Niue",
+        "code": "NU / NIU",
+        "tel": "683"
+    },
+    {
+        "name": "North Korea",
+        "code": "KP / PRK",
+        "tel": "850"
+    },
+    {
+        "name": "Northern Mariana Islands",
+        "code": "MP / MNP",
+        "tel": "1-670"
+    },
+    {
+        "name": "Norway",
+        "code": "NO / NOR",
+        "tel": "47"
+    },
+    {
+        "name": "Oman",
+        "code": "OM / OMN",
+        "tel": "968"
+    },
+    {
+        "name": "Pakistan",
+        "code": "PK / PAK",
+        "tel": "92"
+    },
+    {
+        "name": "Palau",
+        "code": "PW / PLW",
+        "tel": "680"
+    },
+    {
+        "name": "Palestine",
+        "code": "PS / PSE",
+        "tel": "970"
+    },
+    {
+        "name": "Panama",
+        "code": "PA / PAN",
+        "tel": "507"
+    },
+    {
+        "name": "Papua New Guinea",
+        "code": "PG / PNG",
+        "tel": "675"
+    },
+    {
+        "name": "Paraguay",
+        "code": "PY / PRY",
+        "tel": "595"
+    },
+    {
+        "name": "Peru",
+        "code": "PE / PER",
+        "tel": "51"
+    },
+    {
+        "name": "Philippines",
+        "code": "PH / PHL",
+        "tel": "63"
+    },
+    {
+        "name": "Pitcairn",
+        "code": "PN / PCN",
+        "tel": "64"
+    },
+    {
+        "name": "Poland",
+        "code": "PL / POL",
+        "tel": "48"
+    },
+    {
+        "name": "Portugal",
+        "code": "PT / PRT",
+        "tel": "351"
+    },
+    {
+        "name": "Puerto Rico",
+        "code": "PR / PRI",
+        "tel": "1-787, 1-939"
+    },
+    {
+        "name": "Qatar",
+        "code": "QA / QAT",
+        "tel": "974"
+    },
+    {
+        "name": "Republic of the Congo",
+        "code": "CG / COG",
+        "tel": "242"
+    },
+    {
+        "name": "Reunion",
+        "code": "RE / REU",
+        "tel": "262"
+    },
+    {
+        "name": "Romania",
+        "code": "RO / ROU",
+        "tel": "40"
+    },
+    {
+        "name": "Russia",
+        "code": "RU / RUS",
+        "tel": "7"
+    },
+    {
+        "name": "Rwanda",
+        "code": "RW / RWA",
+        "tel": "250"
+    },
+    {
+        "name": "Saint Barthelemy",
+        "code": "BL / BLM",
+        "tel": "590"
+    },
+    {
+        "name": "Saint Helena",
+        "code": "SH / SHN",
+        "tel": "290"
+    },
+    {
+        "name": "Saint Kitts and Nevis",
+        "code": "KN / KNA",
+        "tel": "1-869"
+    },
+    {
+        "name": "Saint Lucia",
+        "code": "LC / LCA",
+        "tel": "1-758"
+    },
+    {
+        "name": "Saint Martin",
+        "code": "MF / MAF",
+        "tel": "590"
+    },
+    {
+        "name": "Saint Pierre and Miquelon",
+        "code": "PM / SPM",
+        "tel": "508"
+    },
+    {
+        "name": "Saint Vincent and the Grenadines",
+        "code": "VC / VCT",
+        "tel": "1-784"
+    },
+    {
+        "name": "Samoa",
+        "code": "WS / WSM",
+        "tel": "685"
+    },
+    {
+        "name": "San Marino",
+        "code": "SM / SMR",
+        "tel": "378"
+    },
+    {
+        "name": "Sao Tome and Principe",
+        "code": "ST / STP",
+        "tel": "239"
+    },
+    {
+        "name": "Saudi Arabia",
+        "code": "SA / SAU",
+        "tel": "966"
+    },
+    {
+        "name": "Senegal",
+        "code": "SN / SEN",
+        "tel": "221"
+    },
+    {
+        "name": "Serbia",
+        "code": "RS / SRB",
+        "tel": "381"
+    },
+    {
+        "name": "Seychelles",
+        "code": "SC / SYC",
+        "tel": "248"
+    },
+    {
+        "name": "Sierra Leone",
+        "code": "SL / SLE",
+        "tel": "232"
+    },
+    {
+        "name": "Singapore",
+        "code": "SG / SGP",
+        "tel": "65"
+    },
+    {
+        "name": "Sint Maarten",
+        "code": "SX / SXM",
+        "tel": "1-721"
+    },
+    {
+        "name": "Slovakia",
+        "code": "SK / SVK",
+        "tel": "421"
+    },
+    {
+        "name": "Slovenia",
+        "code": "SI / SVN",
+        "tel": "386"
+    },
+    {
+        "name": "Solomon Islands",
+        "code": "SB / SLB",
+        "tel": "677"
+    },
+    {
+        "name": "Somalia",
+        "code": "SO / SOM",
+        "tel": "252"
+    },
+    {
+        "name": "South Africa",
+        "code": "ZA / ZAF",
+        "tel": "27"
+    },
+    {
+        "name": "South Korea",
+        "code": "KR / KOR",
+        "tel": "82"
+    },
+    {
+        "name": "South Sudan",
+        "code": "SS / SSD",
+        "tel": "211"
+    },
+    {
+        "name": "Spain",
+        "code": "ES / ESP",
+        "tel": "34"
+    },
+    {
+        "name": "Sri Lanka",
+        "code": "LK / LKA",
+        "tel": "94"
+    },
+    {
+        "name": "Sudan",
+        "code": "SD / SDN",
+        "tel": "249"
+    },
+    {
+        "name": "Suriname",
+        "code": "SR / SUR",
+        "tel": "597"
+    },
+    {
+        "name": "Svalbard and Jan Mayen",
+        "code": "SJ / SJM",
+        "tel": "47"
+    },
+    {
+        "name": "Swaziland",
+        "code": "SZ / SWZ",
+        "tel": "268"
+    },
+    {
+        "name": "Sweden",
+        "code": "SE / SWE",
+        "tel": "46"
+    },
+    {
+        "name": "Switzerland",
+        "code": "CH / CHE",
+        "tel": "41"
+    },
+    {
+        "name": "Syria",
+        "code": "SY / SYR",
+        "tel": "963"
+    },
+    {
+        "name": "Taiwan",
+        "code": "TW / TWN",
+        "tel": "886"
+    },
+    {
+        "name": "Tajikistan",
+        "code": "TJ / TJK",
+        "tel": "992"
+    },
+    {
+        "name": "Tanzania",
+        "code": "TZ / TZA",
+        "tel": "255"
+    },
+    {
+        "name": "Thailand",
+        "code": "TH / THA",
+        "tel": "66"
+    },
+    {
+        "name": "Togo",
+        "code": "TG / TGO",
+        "tel": "228"
+    },
+    {
+        "name": "Tokelau",
+        "code": "TK / TKL",
+        "tel": "690"
+    },
+    {
+        "name": "Tonga",
+        "code": "TO / TON",
+        "tel": "676"
+    },
+    {
+        "name": "Trinidad and Tobago",
+        "code": "TT / TTO",
+        "tel": "1-868"
+    },
+    {
+        "name": "Tunisia",
+        "code": "TN / TUN",
+        "tel": "216"
+    },
+    {
+        "name": "Turkey",
+        "code": "TR / TUR",
+        "tel": "90"
+    },
+    {
+        "name": "Turkmenistan",
+        "code": "TM / TKM",
+        "tel": "993"
+    },
+    {
+        "name": "Turks and Caicos Islands",
+        "code": "TC / TCA",
+        "tel": "1-649"
+    },
+    {
+        "name": "Tuvalu",
+        "code": "TV / TUV",
+        "tel": "688"
+    },
+    {
+        "name": "U.S. Virgin Islands",
+        "code": "VI / VIR",
+        "tel": "1-340"
+    },
+    {
+        "name": "Uganda",
+        "code": "UG / UGA",
+        "tel": "256"
+    },
+    {
+        "name": "Ukraine",
+        "code": "UA / UKR",
+        "tel": "380"
+    },
+    {
+        "name": "United Arab Emirates",
+        "code": "AE / ARE",
+        "tel": "971"
+    },
+    {
+        "name": "United Kingdom",
+        "code": "GB / GBR",
+        "tel": "44"
+    },
+    {
+        "name": "United States",
+        "code": "US / USA",
+        "tel": "1"
+    },
+    {
+        "name": "Uruguay",
+        "code": "UY / URY",
+        "tel": "598"
+    },
+    {
+        "name": "Uzbekistan",
+        "code": "UZ / UZB",
+        "tel": "998"
+    },
+    {
+        "name": "Vanuatu",
+        "code": "VU / VUT",
+        "tel": "678"
+    },
+    {
+        "name": "Vatican",
+        "code": "VA / VAT",
+        "tel": "379"
+    },
+    {
+        "name": "Venezuela",
+        "code": "VE / VEN",
+        "tel": "58"
+    },
+    {
+        "name": "Vietnam",
+        "code": "VN / VNM",
+        "tel": "84"
+    },
+    {
+        "name": "Wallis and Futuna",
+        "code": "WF / WLF",
+        "tel": "681"
+    },
+    {
+        "name": "Western Sahara",
+        "code": "EH / ESH",
+        "tel": "212"
+    },
+    {
+        "name": "Yemen",
+        "code": "YE / YEM",
+        "tel": "967"
+    },
+    {
+        "name": "Zambia",
+        "code": "ZM / ZMB",
+        "tel": "260"
+    },
+    {
+        "name": "Zimbabwe",
+        "code": "ZW / ZWE",
+        "tel": "263"
+    }
+]

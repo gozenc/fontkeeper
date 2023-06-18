@@ -1,0 +1,82 @@
+$appbar-height: 64px;
+$padding-x-app-desktop: 60px;
+$padding-x-app-mobile: 16px;
+
+$size-display: 16px;
+$size-text: 14px;
+$size-mini: 12px;
+
+.appbar {
+    position: absolute;
+    display: grid;
+    border-bottom: 1px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 1px solid var(--line-color);
+    left: 0;
+    right: 0;
+    top: 0;
+    height: $appbar-height;
+    z-index: 30;
+    padding: 0 $padding-x-app-mobile;
+
+    @media screen and (min-width: 768px) {
+        padding: 0 $padding-x-app-desktop;
+    }
+    .logo {
+        svg {
+            height: 40px;
+            min-width: 200px;
+            cursor: pointer;
+            path {
+                transition: 0.25s all ease;
+                fill: var(--text);
+            }
+            &:hover {
+                path {
+                    transition: 0.25s all ease;
+                    fill: var(--primary);
+                }
+            }
+        }
+    }
+}
+
+.nav {
+    justify-self: right;
+    align-items: center;
+    display: flex;
+
+    > button:first-of-type {
+        margin-right: 8px;
+    }
+
+}
+
+.switcher {
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#dirselector {
+    letter-spacing: -0.15px;
+    text-transform: initial;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // justify-self: right;
+    // background-color: #1e2021;
+    // background-color: var(--primary-light-1);
+    color: var(--primary);
+    border-radius: 8px;
+    &:hover {
+        background-color: var(--primary-light-0);
+    }
+    .icon {
+        color: var(--primary);
+    }
+}

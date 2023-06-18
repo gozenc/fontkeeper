@@ -1,0 +1,7 @@
+@mixin directionAttribute($attr, $direction, $value, $unit) {
+    &#{num} {
+        #{$attr}-#{$direction}: $value;
+    }
+}
+
+// .mr#{$pixel} { margin-right: #{$pixel}px }

@@ -1,0 +1,21 @@
+.key {
+    font-weight: bold;
+    padding: 8px 0;
+}
+
+.value {
+    padding: 8px 0 8px 8px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    font-size: 11px;
+}
+
+.container {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 30%;
+}

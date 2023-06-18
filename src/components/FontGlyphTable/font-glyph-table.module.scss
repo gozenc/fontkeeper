@@ -1,0 +1,15 @@
+.table {
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    display: grid;
+    padding-left: 35%;
+    // grid-auto-rows: repeat(auto-fill, 16vw);
+    gap: 8px;
+    grid-template-columns: repeat(auto-fill,112px);
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}

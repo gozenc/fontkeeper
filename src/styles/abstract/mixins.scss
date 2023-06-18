@@ -1,0 +1,19 @@
+@mixin darkmode {
+    body[theme='dark'] {
+        @content;
+    }
+}
+
+@mixin inputRightGradient {
+    position: relative;
+    &:after{
+        background: linear-gradient(to left, var(--background), var(--background-transparent));
+        display: inline-block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 16%;
+        content: "";
+    }
+}

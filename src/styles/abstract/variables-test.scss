@@ -1,0 +1,66 @@
+$max-content-width: 970px;
+$default-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+$black: #202124;
+$white: #fff;
+$light: #e8eaed;
+
+$gap: 16px;
+$text-dark: #9aa0a6;
+$text-dark-hover: #9aa0a6;
+
+$text-secondary: #5f6368;
+$text-secondary-dark: #9aa0a6;
+
+$appbar-height: 64px;
+$padding-x-app-desktop: 60px;
+$padding-x-app-mobile: 16px;
+
+$button-icon-size: 44px;
+$size-display: 16px;
+$size-text: 14px;
+
+$primary-dark: #8ab4f8;
+
+$colors: (
+    "background": (
+        "default": $white,
+        "dark": $black
+    ),
+    "surface": (
+        "default": $white,
+        "dark": #3c4043
+    ),
+    "text": (
+        "default": #5f6368,
+        "dark": #9aa0a6
+    ),
+    "text-invert": (
+        "dark": #5f6368,
+        "default": #9aa0a6
+    ),
+    "text-active": (
+        "default": $black,
+        "dark": $light
+    ),
+    "line-color": (
+        "default": #dadce0,
+        "dark": #5f6368
+    ),
+    "primary": ( 
+        "default": hsl(217, 80%, 55%),
+        "dark": #8ab4f8,
+    ),
+    "primary-hover": (
+        "default": hsl(217, 80%, 55%),
+        "dark": hsl(217, 89%, 76%)
+    ),
+    "primary-light-0": (
+        "default": hsl(217, 80%, 98%),
+        "dark": rgb(48, 51, 57),
+    ),
+    "primary-light-1": (
+        "default": hsl(217, 80%, 93%),
+        "dark": rgba(138,180,248,.12)
+    )
+);

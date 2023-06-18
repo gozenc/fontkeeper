@@ -1,0 +1,49 @@
+.convert {
+    display: flex;
+    align-items: center;
+    margin: 0px 4px 0 0;
+    padding: 0px;
+    color: var(--primary);
+    font-size: 12px;
+
+    // text-transform: uppercase;
+    // border: none;
+    // background-color: var(--background);
+    // border-radius: 4px;
+    // padding: 2px 8px;
+    // font-size: 11px;
+    // border: 1px solid var(--primary);
+    // cursor: pointer;
+    // transition: .25s all cubic-bezier(0.39, 0.575, 0.565, 1);
+
+    // &:hover {
+    //     transition: .25s all cubic-bezier(0.39, 0.575, 0.565, 1);
+    //     background-color: var(--primary);
+    //     color: var(--background);
+    // }
+}
+
+.wrapper {
+    >* {
+        align-self: center;
+    }
+}
+
+.conversion {
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+    font-size: 12px;
+}
+
+.container {
+    display: flex;
+    margin-left: 32px;
+
+    justify-content: end;
+    flex: 1;
+}
+
+.download {
+    // color: red;
+}

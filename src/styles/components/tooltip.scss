@@ -1,0 +1,39 @@
+.tooltip {
+    &::after {
+        font-family: $default-font;
+        font-size: $size-text;
+        content: attr(tooltip); /* here's the magic */
+        position: absolute;
+        width: 150px;
+        bottom: -100%;
+        transform: translateX(-50%), scale(.8);
+        opacity: .5;
+        left: 50%;
+        padding: 10px;
+        border-radius: 10px;
+        background: var(--text-invert);
+        color: var(--text-active);
+        text-align: center;
+        display: none;
+        // border:10px solid #000;
+        // border-color: transparent black transparent transparent;
+    }
+    &:hover:after {
+        display: inline-block;
+    }
+    .left:after {
+        left: initial;
+        margin: initial;
+        right:100%;
+        margin-right:15px;
+      }
+}
+
+@keyframes tooltipAppear{
+    0% {
+
+    }
+    100% {
+        
+    }
+}

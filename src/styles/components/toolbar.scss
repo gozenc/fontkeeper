@@ -1,0 +1,80 @@
+.toolbar {
+    position: sticky;
+
+    &.sticky {
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--background);
+        z-index: 2;
+        border-bottom: 1px solid var(--line-color);
+        .toolbar__inputs {
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid var(--line-color);
+        }
+    }
+
+    &__inputs {
+        height: $appbar-height;
+        align-items: center;
+        height: 54px;
+        border: 1px solid var(--line-color);
+        border-radius: 8px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 54px 54px;
+
+        * {
+            transition: 0.35s width ease;
+        }
+
+        > * {
+            border-right: 1px solid var(--line-color);
+            align-items: center;
+            height: 100%;
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+
+    &__sentence {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        gap: 8px;
+        padding: 0 8px;
+        &--box {
+            @include inputRightGradient;
+        }
+        input {
+            width: 100%;
+        }
+    }
+
+    &__search {
+        display: grid;
+        grid-template-columns: max-content 1fr max-content;
+        align-items: center;
+        &--box {
+            @include inputRightGradient;
+        }
+        input {
+            width: 100%;
+            font-size: $size-display;
+        }
+    }
+
+
+    &__size {
+        display: grid;
+        gap: 8px;
+        padding: 0 16px 0 8px;
+        grid-template-columns: max-content 1fr;
+        align-content: center;
+    }
+
+    &__reset, &__delete {
+        display: grid;
+        justify-content: center;
+    }
+}

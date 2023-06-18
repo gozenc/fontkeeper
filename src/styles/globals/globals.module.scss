@@ -1,0 +1,111 @@
+@import "./functions";
+
+$displayAttrs: block, inline, inline-block, flex, inline-flex, grid, inline-grid, flow-root, none, contents, table, table-row, list-item, inherit, initial, revert, unset;
+@each $attr in $displayAttrs {
+    .d#{camelize($attr)} {
+        display: #{$attr};
+    }
+}
+
+$flexPositionAttrs: normal, stretch, center, start, end, flex-start, flex-end, baseline, inherit, initial, revert, unset;
+@each $attr in $flexPositionAttrs {
+    .align#{camelize($attr)} {
+        align-items: #{$attr};
+    }
+}
+
+$justifyAtrs: between, around, evenly, center, end, start;
+@each $attr in $justifyAtrs {
+    .justify#{camelize($attr)} {
+        @if $attr == center or $attr == end or $attr == start {
+            justify-content: #{$attr};
+        } @else {
+            justify-content: space-#{$attr};
+        }
+    }
+}
+
+$positions: static, relative, fixed, absolute, sticky;
+@each $attr in $positions {
+    .pos#{camelize($attr)} {
+        position: #{$attr};
+    }
+}
+
+.gap {
+    gap: 8px;
+}
+
+.gap16 {
+    gap: 16px;
+}
+
+.absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.absoluteTopRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.absoluteTopLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.absoluteBottomRight {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.absoluteBottomLeft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+$sizeValues: 2,4,6,8,12,16,24,36;
+@each $val in $sizeValues {
+
+    .m#{$val} { margin: #{$val}px }
+    .p#{$val} { padding: #{$val}px }
+
+    .my#{$val} { margin-bottom: #{$val}px; margin-top: #{$val}px; }
+    .py#{$val} { padding-bottom: #{$val}px; padding-top: #{$val}px; }
+
+    .mx#{$val} { margin-right: #{$val}px; margin-left: #{$val}px; }
+    .px#{$val} { padding-right: #{$val}px; padding-left: #{$val}px; }
+
+    .mr#{$val} { margin-right: #{$val}px }
+    .ml#{$val} { margin-left: #{$val}px }
+    .mt#{$val} { margin-top: #{$val}px }
+    .mb#{$val} { margin-bottom: #{$val}px }
+
+    .pr#{$val} { padding-right: #{$val}px }
+    .pl#{$val} { padding-left: #{$val}px }
+    .pt#{$val} { padding-top: #{$val}px }
+    .pb#{$val} { padding-bottom: #{$val}px }
+}
+
+.card {
+    border-radius: 8px;
+    background: var(--background);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.shadow {
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.w100 { width: 100%;}
+.w50 { width: 50%;}
+.w25 { width: 25%;}
+
+.textCenter { text-align: center;}

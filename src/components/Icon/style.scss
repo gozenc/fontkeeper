@@ -1,0 +1,72 @@
+// https://fonts.google.com/icons
+
+$icon-size: 44px;
+$icon-size-mini: 24px;
+
+.icon {
+    &:before {
+        content: attr(name);
+    }
+    color: var(--text);
+    font-size: 24px;
+    line-height: 1;
+    height: $icon-size;
+    width: $icon-size;
+    font-family: 'icons';
+    padding: 10px;
+
+    &[size="mini"]{
+        height: $icon-size-mini;
+        width: $icon-size-mini;
+        font-size: 20px;
+        padding: 0;
+    }
+
+    &[disabled], &__button[disabled] {
+        filter: grayscale(1) opacity(.4);
+        cursor: not-allowed;
+        &:hover {
+            &::after {
+                transform: scale(0);
+            }
+        }
+    }
+
+    &__button {
+        bottom: 1px;
+        border: 0;
+        position: relative;
+        transition: opacity 0.2s;
+        cursor: pointer;
+        background: none;
+        align-self: center;
+
+        &:hover {
+            color: var(--primary);
+            &::after {
+                transition: .1s transform cubic-bezier(0.19, 1, 0.22, 1);
+                transform: scale(1);
+            }
+        }
+
+        &::after {
+            content: "";
+            display: inline-block;
+            transform: scale(0);
+            width: 100%;
+            position: absolute;
+            border-radius: 100%;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: var(--primary-light-0);
+            z-index: -1;
+        }
+
+        &::before {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+

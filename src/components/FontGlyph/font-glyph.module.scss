@@ -1,0 +1,49 @@
+$utility-text-size: 11px;
+
+.glyph {
+    --glyph-box-size: 100px;
+    // aspect-ratio: 1/1.3;
+    // width: 10vw;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 128px;
+    width: 112px;
+    // background-color: var(--surface);
+    background-color: var(--google-gray-900);
+    // background: linear-gradient(to top right, #1F1C2C, var(--background));
+    // border: .5px solid var(--line-color);
+    position: relative;
+    box-shadow: 3px 3px 7px rgb(25, 25, 25);
+    cursor: pointer;
+    &:hover {
+        // outline: 1px solid var(--primary);
+        transition: .1s all;
+        background-color: var(--google-gray-850);
+        // color: var(--primary-light-100);
+    }
+    &:active, &.selected {
+        outline: 1px solid var(--primary);
+        background-color: var(--google-gray-800);
+        color: #fff;
+    }
+}
+
+.char {
+    font-size: 44px;
+}
+
+.unicode {
+    font-size: $utility-text-size;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.name {
+    font-size: $utility-text-size;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}

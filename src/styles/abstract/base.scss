@@ -1,0 +1,56 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+html {
+    // transition: .25s background ease;
+}
+
+body {
+    font-family: $default-font;
+    margin: 0;
+    color: var(--text);
+    font-size: $size-text;
+    line-height: 1;
+}
+#app {
+    position: relative;
+    padding: $appbar-height + $gap $padding-x-app-mobile 80px;
+    min-height: 100vh;
+    @include md {
+        padding: $appbar-height + $gap $padding-x-app-desktop 80px;
+    }
+}
+
+input {
+    background: none;
+    border: none;
+    color: var(--text-active);
+    font-size: $size-display;
+    &:focus {
+        outline: none;
+        &::placeholder {
+            color: var(--primary);
+        }
+    }
+    &::selection {
+        color: var(--text);
+        background: var(--primary-light-1);
+      }
+}
+
+a {
+    color: var(--primary);
+
+    &:hover {
+        filter: brightness(1.2);
+    }
+}
+
+#content {
+    min-height: calc(100vh - $appbar-height);
+    margin-top: -1px;
+    padding-top: 1px;
+}

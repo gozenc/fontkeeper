@@ -1,0 +1,26 @@
+$displayAttrs: block, inline, inline-block, flex, inline-flex, grid, inline-grid, flow-root, none, contents, table, table-row, list-item, inherit, initial, revert, unset;
+@each $attr in $displayAttrs {
+    .d-#{$attr} {
+        display: #{$attr};
+    }
+}
+
+$flexPositionAttrs: normal, stretch, center, start, end, flex-start, flex-end, baseline, inherit, initial, revert, unset;
+@each $attr in $flexPositionAttrs {
+    .align-#{$attr} {
+        align-items: #{$attr};
+    }
+}
+
+$justifyAtrs: between, around, evenly, center;
+@each $attr in $justifyAtrs {
+    .justify-#{$attr} {
+        @if $attr == center {
+            justify-content: #{$attr};
+        } @else {
+            justify-content: space-#{$attr};
+        }
+    }
+}
+
+

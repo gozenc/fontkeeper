@@ -1,0 +1,103 @@
+$spacing: 5vh;
+
+.group {
+    position: fixed;
+    z-index: 1;
+    inset-block-end: 0;
+    -webkit-padding-after: $spacing;
+    padding-block-end: $spacing;
+    display: grid;
+  
+    gap: 1vh;
+    pointer-events: none;
+
+    inset-inline: 0;
+    justify-items: center;
+    justify-content: center;
+}
+
+.left {
+    inset-inline: unset;
+    justify-items: start;
+    justify-content: initial;
+    padding-left: $spacing;
+}
+
+.right {
+    justify-items: initial;
+    justify-content: initial;
+    padding-right: $spacing;
+}
+
+.toast {
+    --duration: 3s;
+    --bg-lightness: 90%;
+    --travel-distance: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+    color: var(--text);
+    // background: hsl(0 0% var(--bg-lightness) / 90%);
+
+    background: var(--background);
+    border-radius: 8px;
+    border: 1px solid var(--line-color);
+    
+    // max-inline-size: min(25ch, 90vw);
+    max-inline-size: 90vw;
+    padding-block: 1.6ch;
+    padding-inline: 1.6ch;
+    border-radius: 8px;
+    font-size: 12px;
+    will-change: transform;
+    animation: 
+        fade-in 0.3s ease,
+        slide-in 0.3s ease, 
+        fade-out 0.3s ease var(--duration);
+
+    [data-position="left"] {
+        justify-self: left;
+    }
+    [data-position="right"] {
+        justify-self: right;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .toast {
+        --bg-lightness: 20%;
+    }
+}
+@media (prefers-reduced-motion: no-preference) {
+    .toast {
+        --travel-distance: $spacing;
+    }
+}
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes fade-out {
+    to {
+        opacity: 0;
+    }
+}
+@keyframes fade-out {
+    to {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes slide-in {
+    0% {
+        transform: translateY(var(--travel-distance, 10px));
+    }
+}
+@keyframes slide-in {
+    0% {
+        transform: translateY(var(--travel-distance, 10px));
+    }
+}
+

@@ -1,0 +1,80 @@
+.dropdown {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+
+    &__value {
+        display: grid;
+        grid-template-columns: max-content 8px;
+        gap: 8px;
+        padding: 8px;
+        // background-color: var(--primary-light-1);
+        color: var(--primary);
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    &:hover {
+        .dropdown__value {
+            background-color: var(--primary-light-0);
+        }
+    }
+
+    &:active,
+    &:focus {
+        .dropdown__value {
+            background-color: var(--primary-light-1);
+        }
+    }
+
+    &__options {
+        z-index: 5;
+        border-radius: 8px;
+        display: none;
+        position: absolute;
+        background-color: var(--surface);
+        color: var(--text-active);
+        min-width: 112px;
+        max-width: 280px;
+        max-height: 174px;
+        flex-direction: column;
+        width: max-content;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        // max-height: calc(100vh - 48px);
+        box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+        &.shown {
+            display: flex;
+        }
+    }
+
+    &__option {
+        padding: 8px;
+        &:hover {
+            background-color: var(--primary-light-1);
+        }
+        &.selected {
+            background-color: var(--primary-light-0);
+        }
+    }
+}
+
+$arrow-size: 5px;
+$arrow-color: var(--primary);
+
+@mixin paintTriangle {
+    width: 0;
+    height: 0;
+    border-left: $arrow-size solid transparent;
+    border-right: $arrow-size solid transparent;
+}
+
+.arrow-up {
+    @include paintTriangle;
+    border-bottom: $arrow-size solid $arrow-color;
+}
+
+.arrow-down {
+    @include paintTriangle;
+    border-top: $arrow-size solid $arrow-color;
+}

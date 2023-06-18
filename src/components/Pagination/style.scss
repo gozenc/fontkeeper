@@ -1,0 +1,21 @@
+
+@mixin makeArea($name) {
+    &__#{$name}{
+        grid-area: #{$name}
+    }
+}
+
+.pagination {
+    display: grid;
+    align-items: center;
+    gap: 24px;
+    padding: 4px 0;
+    grid-template-columns: max-content 1fr max-content max-content max-content;
+    grid-template-areas: "info x rows pages nav";
+    font-size: 12px;
+    @include makeArea("info");
+    @include makeArea("rows");
+    @include makeArea("pages");
+    @include makeArea("nav");
+}
+

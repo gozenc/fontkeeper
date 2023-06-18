@@ -1,0 +1,18 @@
+.container {
+    margin: 8px 0 16px 0;
+    height: .5px;
+    width: 100%;
+    border: none;
+    background: var(--text);
+    position: relative;
+}
+
+.text{
+    color: var(--text);
+    background-color: var(--background);
+    position: absolute;
+    padding: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

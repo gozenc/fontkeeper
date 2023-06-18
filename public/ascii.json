@@ -1,0 +1,1182 @@
+[
+    {
+        "code": "ASCII20",
+        "name": "(Device control 4)",
+        "character": "DC4"
+    },
+    {
+        "code": "ASCII21",
+        "name": "(Negative acknowledgement)",
+        "character": "NAK"
+    },
+    {
+        "code": "ASCII22",
+        "name": "(Synchronous idle)",
+        "character": "SYN"
+    },
+    {
+        "code": "ASCII23",
+        "name": "(End of transmission block)",
+        "character": "ETB"
+    },
+    {
+        "code": "ASCII24",
+        "name": "(Cancel)",
+        "character": "CAN"
+    },
+    {
+        "code": "ASCII25",
+        "name": "(End of medium)",
+        "character": "EM"
+    },
+    {
+        "code": "ASCII26",
+        "name": "(Substitute)",
+        "character": "SUB"
+    },
+    {
+        "code": "ASCII27",
+        "name": "(Escape)",
+        "character": "ESC"
+    },
+    {
+        "code": "ASCII28",
+        "name": "(File separator)",
+        "character": "FS"
+    },
+    {
+        "code": "ASCII29",
+        "name": "(Group separator)",
+        "character": "GS"
+    },
+    {
+        "code": "ASCII30",
+        "name": "(Record separator)",
+        "character": "RS"
+    },
+    {
+        "code": "ASCII31",
+        "name": "(Unit separator)",
+        "character": "US"
+    },
+    {
+        "code": "ASCII32",
+        "name": "(space)",
+        "character": ""
+    },
+    {
+        "code": "ASCII33",
+        "name": "(exclamation mark)",
+        "character": "!"
+    },
+    {
+        "code": "ASCII34",
+        "name": "(Quotation mark)",
+        "character": "\""
+    },
+    {
+        "code": "ASCII35",
+        "name": "(Number sign)",
+        "character": "#"
+    },
+    {
+        "code": "ASCII36",
+        "name": "(Dollar sign)",
+        "character": "$"
+    },
+    {
+        "code": "ASCII37",
+        "name": "(Percent sign)",
+        "character": "%"
+    },
+    {
+        "code": "ASCII38",
+        "name": "(Ampersand)",
+        "character": "&"
+    },
+    {
+        "code": "ASCII39",
+        "name": "(Apostrophe)",
+        "character": "'"
+    },
+    {
+        "code": "ASCII40",
+        "name": "(round brackets or parentheses)",
+        "character": "("
+    },
+    {
+        "code": "ASCII41",
+        "name": "(round brackets or parentheses)",
+        "character": ")"
+    },
+    {
+        "code": "ASCII42",
+        "name": "(Asterisk)",
+        "character": "*"
+    },
+    {
+        "code": "ASCII43",
+        "name": "(Plus sign)",
+        "character": "+"
+    },
+    {
+        "code": "ASCII44",
+        "name": "(Comma)",
+        "character": ","
+    },
+    {
+        "code": "ASCII45",
+        "name": "(Hyphen)",
+        "character": "-"
+    },
+    {
+        "code": "ASCII46",
+        "name": "(Full stop , dot)",
+        "character": "."
+    },
+    {
+        "code": "ASCII47",
+        "name": "(Slash)",
+        "character": "/"
+    },
+    {
+        "code": "ASCII48",
+        "name": "(number zero)",
+        "character": "0"
+    },
+    {
+        "code": "ASCII49",
+        "name": "(number one)",
+        "character": "1"
+    },
+    {
+        "code": "ASCII50",
+        "name": "(number two)",
+        "character": "2"
+    },
+    {
+        "code": "ASCII51",
+        "name": "(number three)",
+        "character": "3"
+    },
+    {
+        "code": "ASCII52",
+        "name": "(number four)",
+        "character": "4"
+    },
+    {
+        "code": "ASCII53",
+        "name": "(number five)",
+        "character": "5"
+    },
+    {
+        "code": "ASCII54",
+        "name": "(number six)",
+        "character": "6"
+    },
+    {
+        "code": "ASCII55",
+        "name": "(number seven)",
+        "character": "7"
+    },
+    {
+        "code": "ASCII56",
+        "name": "(number eight)",
+        "character": "8"
+    },
+    {
+        "code": "ASCII57",
+        "name": "(number nine)",
+        "character": "9"
+    },
+    {
+        "code": "ASCII58",
+        "name": "(Colon)",
+        "character": ":"
+    },
+    {
+        "code": "ASCII59",
+        "name": "(Semicolon)",
+        "character": ";"
+    },
+    {
+        "code": "ASCII60",
+        "name": "(Less-than sign )",
+        "character": "<"
+    },
+    {
+        "code": "ASCII61",
+        "name": "(Equals sign)",
+        "character": "="
+    },
+    {
+        "code": "ASCII62",
+        "name": "(Greater-than sign ; Inequality)",
+        "character": ">"
+    },
+    {
+        "code": "ASCII63",
+        "name": "(Question mark)",
+        "character": "?"
+    },
+    {
+        "code": "ASCII64",
+        "name": "(At sign)",
+        "character": "@"
+    },
+    {
+        "code": "ASCII65",
+        "name": "(Capital A )",
+        "character": "A"
+    },
+    {
+        "code": "ASCII66",
+        "name": "(Capital B )",
+        "character": "B"
+    },
+    {
+        "code": "ASCII67",
+        "name": "(Capital C )",
+        "character": "C"
+    },
+    {
+        "code": "ASCII68",
+        "name": "(Capital D )",
+        "character": "D"
+    },
+    {
+        "code": "ASCII69",
+        "name": "(Capital E )",
+        "character": "E"
+    },
+    {
+        "code": "ASCII70",
+        "name": "(Capital F )",
+        "character": "F"
+    },
+    {
+        "code": "ASCII71",
+        "name": "(Capital G )",
+        "character": "G"
+    },
+    {
+        "code": "ASCII72",
+        "name": "(Capital H )",
+        "character": "H"
+    },
+    {
+        "code": "ASCII73",
+        "name": "(Capital I )",
+        "character": "I"
+    },
+    {
+        "code": "ASCII74",
+        "name": "(Capital J )",
+        "character": "J"
+    },
+    {
+        "code": "ASCII75",
+        "name": "(Capital K )",
+        "character": "K"
+    },
+    {
+        "code": "ASCII76",
+        "name": "(Capital L )",
+        "character": "L"
+    },
+    {
+        "code": "ASCII77",
+        "name": "(Capital M )",
+        "character": "M"
+    },
+    {
+        "code": "ASCII78",
+        "name": "(Capital N )",
+        "character": "N"
+    },
+    {
+        "code": "ASCII79",
+        "name": "(Capital O )",
+        "character": "O"
+    },
+    {
+        "code": "ASCII80",
+        "name": "(Capital P )",
+        "character": "P"
+    },
+    {
+        "code": "ASCII81",
+        "name": "(Capital Q )",
+        "character": "Q"
+    },
+    {
+        "code": "ASCII82",
+        "name": "(Capital R )",
+        "character": "R"
+    },
+    {
+        "code": "ASCII83",
+        "name": "(Capital S )",
+        "character": "S"
+    },
+    {
+        "code": "ASCII84",
+        "name": "(Capital T )",
+        "character": "T"
+    },
+    {
+        "code": "ASCII85",
+        "name": "(Capital U )",
+        "character": "U"
+    },
+    {
+        "code": "ASCII86",
+        "name": "(Capital V )",
+        "character": "V"
+    },
+    {
+        "code": "ASCII87",
+        "name": "(Capital W )",
+        "character": "W"
+    },
+    {
+        "code": "ASCII88",
+        "name": "(Capital X )",
+        "character": "X"
+    },
+    {
+        "code": "ASCII89",
+        "name": "(Capital Y )",
+        "character": "Y"
+    },
+    {
+        "code": "ASCII90",
+        "name": "(Capital Z )",
+        "character": "Z"
+    },
+    {
+        "code": "ASCII91",
+        "name": "(square brackets or box brackets)",
+        "character": "["
+    },
+    {
+        "code": "ASCII92",
+        "name": "(Backslash)",
+        "character": "\\"
+    },
+    {
+        "code": "ASCII93",
+        "name": "(square brackets or box brackets)",
+        "character": "]"
+    },
+    {
+        "code": "ASCII94",
+        "name": "(Caret or circumflex accent)",
+        "character": "^"
+    },
+    {
+        "code": "ASCII95",
+        "name": "(underscore , understrike , underbar or low line)",
+        "character": "_"
+    },
+    {
+        "code": "ASCII96",
+        "name": "(Grave accent)",
+        "character": "`"
+    },
+    {
+        "code": "ASCII97",
+        "name": "(Lowercase  a )",
+        "character": "a"
+    },
+    {
+        "code": "ASCII98",
+        "name": "(Lowercase  b )",
+        "character": "b"
+    },
+    {
+        "code": "ASCII99",
+        "name": "(Lowercase  c )",
+        "character": "c"
+    },
+    {
+        "code": "ASCII100",
+        "name": "(Lowercase  d )",
+        "character": "d"
+    },
+    {
+        "code": "ASCII101",
+        "name": "(Lowercase  e )",
+        "character": "e"
+    },
+    {
+        "code": "ASCII102",
+        "name": "(Lowercase  f )",
+        "character": "f"
+    },
+    {
+        "code": "ASCII103",
+        "name": "(Lowercase  g )",
+        "character": "g"
+    },
+    {
+        "code": "ASCII104",
+        "name": "(Lowercase  h )",
+        "character": "h"
+    },
+    {
+        "code": "ASCII105",
+        "name": "(Lowercase  i )",
+        "character": "i"
+    },
+    {
+        "code": "ASCII106",
+        "name": "(Lowercase  j )",
+        "character": "j"
+    },
+    {
+        "code": "ASCII107",
+        "name": "(Lowercase  k )",
+        "character": "k"
+    },
+    {
+        "code": "ASCII108",
+        "name": "(Lowercase  l )",
+        "character": "l"
+    },
+    {
+        "code": "ASCII109",
+        "name": "(Lowercase  m )",
+        "character": "m"
+    },
+    {
+        "code": "ASCII110",
+        "name": "(Lowercase  n )",
+        "character": "n"
+    },
+    {
+        "code": "ASCII111",
+        "name": "(Lowercase  o )",
+        "character": "o"
+    },
+    {
+        "code": "ASCII112",
+        "name": "(Lowercase  p )",
+        "character": "p"
+    },
+    {
+        "code": "ASCII113",
+        "name": "(Lowercase  q )",
+        "character": "q"
+    },
+    {
+        "code": "ASCII114",
+        "name": "(Lowercase  r )",
+        "character": "r"
+    },
+    {
+        "code": "ASCII115",
+        "name": "(Lowercase  s )",
+        "character": "s"
+    },
+    {
+        "code": "ASCII116",
+        "name": "(Lowercase  t )",
+        "character": "t"
+    },
+    {
+        "code": "ASCII117",
+        "name": "(Lowercase  u )",
+        "character": "u"
+    },
+    {
+        "code": "ASCII118",
+        "name": "(Lowercase  v )",
+        "character": "v"
+    },
+    {
+        "code": "ASCII119",
+        "name": "(Lowercase  w )",
+        "character": "w"
+    },
+    {
+        "code": "ASCII120",
+        "name": "(Lowercase  x )",
+        "character": "x"
+    },
+    {
+        "code": "ASCII121",
+        "name": "(Lowercase  y )",
+        "character": "y"
+    },
+    {
+        "code": "ASCII122",
+        "name": "(Lowercase  z )",
+        "character": "z"
+    },
+    {
+        "code": "ASCII123",
+        "name": "(curly brackets or braces)",
+        "character": "{"
+    },
+    {
+        "code": "ASCII124",
+        "name": "(vertical-bar, vbar, vertical line or vertical slash)",
+        "character": "|"
+    },
+    {
+        "code": "ASCII125",
+        "name": "(curly brackets or braces)",
+        "character": "}"
+    },
+    {
+        "code": "ASCII126",
+        "name": "(Tilde ; swung dash)",
+        "character": "~"
+    },
+    {
+        "code": "ASCII127",
+        "name": "(Delete)",
+        "character": "DEL"
+    },
+    {
+        "code": "ASCII128",
+        "name": "(Majuscule C-cedilla )",
+        "character": "Ç"
+    },
+    {
+        "code": "ASCII129",
+        "name": "(letter \"u\" with umlaut or diaeresis ; \"u-umlaut\")",
+        "character": "ü"
+    },
+    {
+        "code": "ASCII130",
+        "name": "(letter \"e\" with acute accent or \"e-acute\")",
+        "character": "é"
+    },
+    {
+        "code": "ASCII131",
+        "name": "(letter \"a\" with circumflex accent or \"a-circumflex\")",
+        "character": "â"
+    },
+    {
+        "code": "ASCII132",
+        "name": "(letter \"a\" with umlaut or diaeresis ; \"a-umlaut\")",
+        "character": "ä"
+    },
+    {
+        "code": "ASCII133",
+        "name": "(letter \"a\" with grave accent)",
+        "character": "à"
+    },
+    {
+        "code": "ASCII134",
+        "name": "(letter \"a\"  with a ring)",
+        "character": "å"
+    },
+    {
+        "code": "ASCII135",
+        "name": "(Minuscule c-cedilla)",
+        "character": "ç"
+    },
+    {
+        "code": "ASCII136",
+        "name": "(letter \"e\" with circumflex accent or \"e-circumflex\")",
+        "character": "ê"
+    },
+    {
+        "code": "ASCII137",
+        "name": "(letter \"e\" with umlaut or diaeresis ; \"e-umlaut\")",
+        "character": "ë"
+    },
+    {
+        "code": "ASCII138",
+        "name": "(letter \"e\" with grave accent)",
+        "character": "è"
+    },
+    {
+        "code": "ASCII139",
+        "name": "(letter \"i\" with umlaut or diaeresis ; \"i-umlaut\")",
+        "character": "ï"
+    },
+    {
+        "code": "ASCII140",
+        "name": "(letter \"i\" with circumflex accent or \"i-circumflex\")",
+        "character": "î"
+    },
+    {
+        "code": "ASCII141",
+        "name": "(letter \"i\" with grave accent)",
+        "character": "ì"
+    },
+    {
+        "code": "ASCII142",
+        "name": "(letter \"A\" with umlaut or diaeresis ; \"A-umlaut\")",
+        "character": "Ä"
+    },
+    {
+        "code": "ASCII143",
+        "name": "(letter \"A\"  with a ring)",
+        "character": "Å"
+    },
+    {
+        "code": "ASCII144",
+        "name": "(Capital letter \"E\" with acute accent or \"E-acute\")",
+        "character": "É"
+    },
+    {
+        "code": "ASCII145",
+        "name": "(Latin diphthong \"ae\")",
+        "character": "æ"
+    },
+    {
+        "code": "ASCII146",
+        "name": "(Latin diphthong \"AE\")",
+        "character": "Æ"
+    },
+    {
+        "code": "ASCII147",
+        "name": "(letter \"o\" with circumflex accent or \"o-circumflex\")",
+        "character": "ô"
+    },
+    {
+        "code": "ASCII148",
+        "name": "(letter \"o\" with umlaut or diaeresis ; \"o-umlaut\")",
+        "character": "ö"
+    },
+    {
+        "code": "ASCII149",
+        "name": "(letter \"o\" with grave accent)",
+        "character": "ò"
+    },
+    {
+        "code": "ASCII150",
+        "name": "(letter \"u\" with circumflex accent or \"u-circumflex\")",
+        "character": "û"
+    },
+    {
+        "code": "ASCII151",
+        "name": "(letter \"u\" with grave accent)",
+        "character": "ù"
+    },
+    {
+        "code": "ASCII152",
+        "name": "(letter \"y\" with diaeresis)",
+        "character": "ÿ"
+    },
+    {
+        "code": "ASCII153",
+        "name": "(letter \"O\" with umlaut or diaeresis ; \"O-umlaut\")",
+        "character": "Ö"
+    },
+    {
+        "code": "ASCII154",
+        "name": "(letter \"U\" with umlaut or diaeresis ; \"U-umlaut\")",
+        "character": "Ü"
+    },
+    {
+        "code": "ASCII155",
+        "name": "(slashed zero or empty set)",
+        "character": "ø"
+    },
+    {
+        "code": "ASCII156",
+        "name": "(Pound sign ; symbol for the pound sterling)",
+        "character": "£"
+    },
+    {
+        "code": "ASCII157",
+        "name": "(slashed zero or empty set)",
+        "character": "Ø"
+    },
+    {
+        "code": "ASCII158",
+        "name": "(multiplication sign)",
+        "character": "×"
+    },
+    {
+        "code": "ASCII159",
+        "name": "(function sign ; f with hook sign ; florin sign )",
+        "character": "ƒ"
+    },
+    {
+        "code": "ASCII160",
+        "name": "(letter \"a\" with acute accent or \"a-acute\")",
+        "character": "á"
+    },
+    {
+        "code": "ASCII161",
+        "name": "(letter \"i\" with acute accent or \"i-acute\")",
+        "character": "í"
+    },
+    {
+        "code": "ASCII162",
+        "name": "(letter \"o\" with acute accent or \"o-acute\")",
+        "character": "ó"
+    },
+    {
+        "code": "ASCII163",
+        "name": "(letter \"u\" with acute accent or \"u-acute\")",
+        "character": "ú"
+    },
+    {
+        "code": "ASCII164",
+        "name": "(letter \"n\" with tilde ; enye)",
+        "character": "ñ"
+    },
+    {
+        "code": "ASCII165",
+        "name": "(letter \"N\" with tilde ; enye)",
+        "character": "Ñ"
+    },
+    {
+        "code": "ASCII166",
+        "name": "(feminine ordinal indicator )",
+        "character": "ª"
+    },
+    {
+        "code": "ASCII167",
+        "name": "(masculine ordinal indicator)",
+        "character": "º"
+    },
+    {
+        "code": "ASCII168",
+        "name": "(Inverted question marks)",
+        "character": "¿"
+    },
+    {
+        "code": "ASCII169",
+        "name": "(Registered trademark symbol)",
+        "character": "®"
+    },
+    {
+        "code": "ASCII170",
+        "name": "(Logical negation symbol)",
+        "character": "¬"
+    },
+    {
+        "code": "ASCII171",
+        "name": "(One half)",
+        "character": "½"
+    },
+    {
+        "code": "ASCII172",
+        "name": "(Quarter or  one fourth)",
+        "character": "¼"
+    },
+    {
+        "code": "ASCII173",
+        "name": "(Inverted exclamation marks)",
+        "character": "¡"
+    },
+    {
+        "code": "ASCII174",
+        "name": "(Guillemets or  angle quotes)",
+        "character": "«"
+    },
+    {
+        "code": "ASCII175",
+        "name": "(Guillemets or  angle quotes)",
+        "character": "»"
+    },
+    {
+        "code": "ASCII176",
+        "name": "",
+        "character": "░"
+    },
+    {
+        "code": "ASCII177",
+        "name": "",
+        "character": "▒"
+    },
+    {
+        "code": "ASCII178",
+        "name": "",
+        "character": "▓"
+    },
+    {
+        "code": "ASCII179",
+        "name": "(Box drawing character)",
+        "character": "│"
+    },
+    {
+        "code": "ASCII180",
+        "name": "(Box drawing character)",
+        "character": "┤"
+    },
+    {
+        "code": "ASCII181",
+        "name": "(Capital letter \"A\" with acute accent or \"A-acute\")",
+        "character": "Á"
+    },
+    {
+        "code": "ASCII182",
+        "name": "(letter \"A\" with circumflex accent or \"A-circumflex\")",
+        "character": "Â"
+    },
+    {
+        "code": "ASCII183",
+        "name": "(letter \"A\" with grave accent)",
+        "character": "À"
+    },
+    {
+        "code": "ASCII184",
+        "name": "(Copyright symbol)",
+        "character": "©"
+    },
+    {
+        "code": "ASCII185",
+        "name": "(Box drawing character)",
+        "character": "╣"
+    },
+    {
+        "code": "ASCII186",
+        "name": "(Box drawing character)",
+        "character": "║"
+    },
+    {
+        "code": "ASCII187",
+        "name": "(Box drawing character)",
+        "character": "╗"
+    },
+    {
+        "code": "ASCII188",
+        "name": "(Box drawing character)",
+        "character": "╝"
+    },
+    {
+        "code": "ASCII189",
+        "name": "(Cent symbol)",
+        "character": "¢"
+    },
+    {
+        "code": "ASCII190",
+        "name": "(YEN and YUAN sign)",
+        "character": "¥"
+    },
+    {
+        "code": "ASCII191",
+        "name": "(Box drawing character)",
+        "character": "┐"
+    },
+    {
+        "code": "ASCII192",
+        "name": "(Box drawing character)",
+        "character": "└"
+    },
+    {
+        "code": "ASCII193",
+        "name": "(Box drawing character)",
+        "character": "┴"
+    },
+    {
+        "code": "ASCII194",
+        "name": "(Box drawing character)",
+        "character": "┬"
+    },
+    {
+        "code": "ASCII195",
+        "name": "(Box drawing character)",
+        "character": "├"
+    },
+    {
+        "code": "ASCII196",
+        "name": "(Box drawing character)",
+        "character": "─"
+    },
+    {
+        "code": "ASCII197",
+        "name": "(Box drawing character)",
+        "character": "┼"
+    },
+    {
+        "code": "ASCII198",
+        "name": "(letter \"a\" with tilde or \"a-tilde\")",
+        "character": "ã"
+    },
+    {
+        "code": "ASCII199",
+        "name": "(letter \"A\" with tilde or \"A-tilde\")",
+        "character": "Ã"
+    },
+    {
+        "code": "ASCII200",
+        "name": "(Box drawing character)",
+        "character": "╚"
+    },
+    {
+        "code": "ASCII201",
+        "name": "(Box drawing character)",
+        "character": "╔"
+    },
+    {
+        "code": "ASCII202",
+        "name": "(Box drawing character)",
+        "character": "╩"
+    },
+    {
+        "code": "ASCII203",
+        "name": "(Box drawing character)",
+        "character": "╦"
+    },
+    {
+        "code": "ASCII204",
+        "name": "(Box drawing character)",
+        "character": "╠"
+    },
+    {
+        "code": "ASCII205",
+        "name": "(Box drawing character)",
+        "character": "═"
+    },
+    {
+        "code": "ASCII206",
+        "name": "(Box drawing character)",
+        "character": "╬"
+    },
+    {
+        "code": "ASCII207",
+        "name": "(generic currency sign )",
+        "character": "¤"
+    },
+    {
+        "code": "ASCII208",
+        "name": "(lowercase \"eth\")",
+        "character": "ð"
+    },
+    {
+        "code": "ASCII209",
+        "name": "(Capital letter \"Eth\")",
+        "character": "Ð"
+    },
+    {
+        "code": "ASCII210",
+        "name": "(letter \"E\" with circumflex accent or \"E-circumflex\")",
+        "character": "Ê"
+    },
+    {
+        "code": "ASCII211",
+        "name": "(letter \"E\" with umlaut or diaeresis ; \"E-umlaut\")",
+        "character": "Ë"
+    },
+    {
+        "code": "ASCII212",
+        "name": "(letter \"E\" with grave accent)",
+        "character": "È"
+    },
+    {
+        "code": "ASCII213",
+        "name": "(lowercase dot less i)",
+        "character": "ı"
+    },
+    {
+        "code": "ASCII214",
+        "name": "(Capital letter \"I\" with acute accent or \"I-acute\")",
+        "character": "Í"
+    },
+    {
+        "code": "ASCII215",
+        "name": "(letter \"I\" with circumflex accent or \"I-circumflex\")",
+        "character": "Î"
+    },
+    {
+        "code": "ASCII216",
+        "name": "(letter \"I\" with umlaut or diaeresis ; \"I-umlaut\")",
+        "character": "Ï"
+    },
+    {
+        "code": "ASCII217",
+        "name": "(Box drawing character)",
+        "character": "┘"
+    },
+    {
+        "code": "ASCII218",
+        "name": "(Box drawing character)",
+        "character": "┌"
+    },
+    {
+        "code": "ASCII219",
+        "name": "(Block)",
+        "character": "█"
+    },
+    {
+        "code": "ASCII220",
+        "name": "",
+        "character": "▄"
+    },
+    {
+        "code": "ASCII221",
+        "name": "(vertical broken bar )",
+        "character": "¦"
+    },
+    {
+        "code": "ASCII222",
+        "name": "(letter \"I\" with grave accent)",
+        "character": "Ì"
+    },
+    {
+        "code": "ASCII223",
+        "name": "",
+        "character": "▀"
+    },
+    {
+        "code": "ASCII224",
+        "name": "(Capital letter \"O\" with acute accent or \"O-acute\")",
+        "character": "Ó"
+    },
+    {
+        "code": "ASCII225",
+        "name": "(letter \"Eszett\" ; \"scharfes S\" or \"sharp S\")",
+        "character": "ß"
+    },
+    {
+        "code": "ASCII226",
+        "name": "(letter \"O\" with circumflex accent or \"O-circumflex\")",
+        "character": "Ô"
+    },
+    {
+        "code": "ASCII227",
+        "name": "(letter \"O\" with grave accent)",
+        "character": "Ò"
+    },
+    {
+        "code": "ASCII228",
+        "name": "(letter \"o\" with tilde or \"o-tilde\")",
+        "character": "õ"
+    },
+    {
+        "code": "ASCII229",
+        "name": "(letter \"O\" with tilde or \"O-tilde\")",
+        "character": "Õ"
+    },
+    {
+        "code": "ASCII230",
+        "name": "(Lowercase letter \"Mu\" ; micro sign or micron)",
+        "character": "µ"
+    },
+    {
+        "code": "ASCII231",
+        "name": "(capital letter \"Thorn\")",
+        "character": "þ"
+    },
+    {
+        "code": "ASCII232",
+        "name": "(lowercase letter \"thorn\")",
+        "character": "Þ"
+    },
+    {
+        "code": "ASCII233",
+        "name": "(Capital letter \"U\" with acute accent or \"U-acute\")",
+        "character": "Ú"
+    },
+    {
+        "code": "ASCII234",
+        "name": "(letter \"U\" with circumflex accent or \"U-circumflex\")",
+        "character": "Û"
+    },
+    {
+        "code": "ASCII235",
+        "name": "(letter \"U\" with grave accent)",
+        "character": "Ù"
+    },
+    {
+        "code": "ASCII236",
+        "name": "(letter \"y\" with acute accent)",
+        "character": "ý"
+    },
+    {
+        "code": "ASCII237",
+        "name": "(Capital letter \"Y\" with acute accent)",
+        "character": "Ý"
+    },
+    {
+        "code": "ASCII238",
+        "name": "(macron symbol)",
+        "character": "¯"
+    },
+    {
+        "code": "ASCII239",
+        "name": "(Acute accent)",
+        "character": "´"
+    },
+    {
+        "code": "ASCII240",
+        "name": "(Hyphen)",
+        "character": "¬"
+    },
+    {
+        "code": "ASCII241",
+        "name": "(Plus-minus sign)",
+        "character": "±"
+    },
+    {
+        "code": "ASCII242",
+        "name": "(underline or underscore)",
+        "character": "‗"
+    },
+    {
+        "code": "ASCII243",
+        "name": "(three quarters)",
+        "character": "¾"
+    },
+    {
+        "code": "ASCII244",
+        "name": "(paragraph sign or pilcrow)",
+        "character": "¶"
+    },
+    {
+        "code": "ASCII245",
+        "name": "(Section sign)",
+        "character": "§"
+    },
+    {
+        "code": "ASCII246",
+        "name": "(The division sign ; Obelus)",
+        "character": "÷"
+    },
+    {
+        "code": "ASCII247",
+        "name": "(cedilla)",
+        "character": "¸"
+    },
+    {
+        "code": "ASCII248",
+        "name": "(degree symbol )",
+        "character": "°"
+    },
+    {
+        "code": "ASCII249",
+        "name": "(Diaeresis)",
+        "character": "¨"
+    },
+    {
+        "code": "ASCII250",
+        "name": "(Interpunct or space dot)",
+        "character": "•"
+    },
+    {
+        "code": "ASCII251",
+        "name": "(superscript one)",
+        "character": "¹"
+    },
+    {
+        "code": "ASCII252",
+        "name": "(cube or superscript three)",
+        "character": "³"
+    },
+    {
+        "code": "ASCII253",
+        "name": "(Square or superscript two)",
+        "character": "²"
+    },
+    {
+        "code": "ASCII254",
+        "name": "(black square)",
+        "character": "■"
+    },
+    {
+        "code": "ASCII255",
+        "name": "(non-breaking space or no-break space)",
+        "character": "nbsp"
+    }
+]

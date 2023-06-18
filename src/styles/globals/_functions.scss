@@ -1,0 +1,42 @@
+@function capitalize($string) {
+    @return to-upper-case(str-slice($string, 1, 1)) + str-slice($string, 2);
+}
+
+@function camelize($input, $pascalCase: true) {
+    $str: '';
+    $capital: $pascalCase;
+    $hyphen: false;
+
+    @for $i from 1 through str-length($input) {
+        $char: str-slice($input, $i, $i);
+
+        @if $char != '-' {
+            $str: $str + if($capital, to-upper-case($char), $char);
+
+            $capital: false;
+            $hyphen: false;
+        } @else {
+            // Allowing double hyphen for BEM syntax
+            @if $hyphen {
+                $str: $str + '--';
+                $hyphen: false;
+            } @else {
+                $hyphen: true;
+            }
+
+            $capital: true;
+        }
+    }
+    @return $str;
+}
+
+@function str-replace($string, $search, $replace: '') {
+    $index: str-index($string, $search);
+
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace +
+            str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+
+    @return $string;
+}

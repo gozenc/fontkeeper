@@ -1,0 +1,52 @@
+@import "../../styles/abstract/mixins.scss";
+
+.box {
+    width: 100%;
+    min-height: 100px;
+
+    h3 {
+        margin: 0;
+        font-size: 14px;
+        font-weight: normal;
+        display: inline-block;
+    }
+
+    label {
+        display: block;
+    }
+}
+
+.header {
+    min-height: 44px;
+}
+
+.sizer {
+    padding: 8px 0;
+    display: grid;
+    gap: 16px;
+    align-items: center;
+    grid-template-columns: 1fr 165px;
+}
+
+.sizerLabel {
+    text-align: right;
+}
+
+.value {
+    height: 100px;
+    @include inputRightGradient;
+    input {
+        width: 100%;
+        height: 100%;
+        font-family: inherit;
+        border: none;
+        color: var(--text);
+        transition: 0.35s color ease;
+
+        &:focus {
+            outline: none;
+            color: var(--text-active);
+            transition: 0.35s color ease;
+        }
+    }
+}

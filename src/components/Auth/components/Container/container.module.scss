@@ -1,0 +1,21 @@
+.container {
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ender {
+    margin: 0 0 8px 0;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.unvisible {
+    visibility: hidden;
+}

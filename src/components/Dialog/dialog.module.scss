@@ -1,0 +1,28 @@
+$spacing: 16px;
+
+.container {
+    position: fixed;
+    left: $spacing;
+    bottom: $spacing;
+    background: var(--background);
+    border-radius: 8px;
+    border: 1px solid var(--line-color);
+    padding: $spacing;
+    color: var(--text);
+    transform: translateY(200px);
+    transition: .25s transform ease-in;
+}
+
+.opened {
+    transform: translateY(0);
+    transition: .35s transform cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes showDialog {
+    0% {
+        transform: translateY(300px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
