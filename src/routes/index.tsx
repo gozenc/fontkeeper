@@ -6,6 +6,7 @@ import FontViewer from "../components/FontViewer";
 import FontEditor from "../components/FontEditor";
 import NotFound from "./404";
 import React from "react";
+
 // const Home =  React.lazy( () => import("./home"))
 // const Category =  React.lazy( () => import("./category"))
 // const Search =  React.lazy( () => import("./search"))

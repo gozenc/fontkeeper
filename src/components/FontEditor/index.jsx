@@ -1,10 +1,6 @@
-import styles from "./font-editor.module.scss"
+import styles from "./font-editor.module.scss";
 
-export default function FontEditor(props) {
-
-    return (
-        <div className={styles.container}>
-            fonteditor
-        </div>
-    )
+export default function FontEditor() {
+  console.log("fonteditor");
+  return <div className={styles.container}>fonteditor</div>;
 }

@@ -1,6 +1,7 @@
 import { uniq, readdirHandler, uuid4 } from "./utils";
 import Database from "./database";
 import { fileToUint8Array } from "../tools/utils";
+
 export default {
   filterFile,
   collect,

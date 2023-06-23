@@ -3,6 +3,7 @@ import { openDB, deleteDB, IDBPDatabase } from "idb";
 import fonts from "../library/fonts";
 import database from "../library/database";
 import { dbname } from "../store/constants";
+import getRandomPangram from "../library/pangram";
 
 const initialFonts = [
   { name: "sans-serif", id: 1 },
@@ -10,14 +11,97 @@ const initialFonts = [
   { name: "monospace", id: 3 },
 ];
 
-export const FontsContext: React.Context<any> = React.createContext(null);
+export interface FontItem {
+  buffer: Uint8Array;
+  ext: string;
+  file: File;
+  id: string;
+  name: string;
+}
 
-export function FontsProvider(props: any) {
+export interface FontkeeperState {
+  globalFontSize: number;
+  globalText: string;
+  dirname: string | null;
+  rows: number;
+  currentPage: number;
+  fonts: { name: string; id: number | string }[];
+  hasDefaults: boolean;
+  convertedMessage: string | null;
+}
+
+export interface FontkeeperContext extends FontkeeperState {
+  state: FontkeeperState;
+  setState: React.Dispatch<React.SetStateAction<FontkeeperState>>;
+  resetFontList: () => void;
+  useLoad: () => void;
+  // getFont: _getFont;
+  // setFonts;
+  // portion;
+  // setPortion;
+  // convertedMessage;
+  // setConvertedMessage;
+  // load: load;
+  // portionate: _portionateFonts;
+  // destroy: _delete;
+  // hasDefaults: hasDefaults;
+  // fonts: loadedFonts;
+  // dirname;
+  // setDirname;
+  // state;
+  // setState;
+}
+
+export const FontsContext = React.createContext({} as FontkeeperContext);
+
+export function FontsProvider(props: React.PropsWithChildren) {
   const [loadedFonts, setFonts] = useState(initialFonts);
-  const [dirname, setDirname] = useState(null);
   const [portion, setPortion] = useState(10);
-  const [hasDefaults, setHasDefaults] = useState(null);
+  const [hasDefaults, setHasDefaults] = useState<boolean>(true);
   const [convertedMessage, setConvertedMessage] = React.useState(null);
+
+  const [state, setState] = React.useState<FontkeeperState>({
+    globalFontSize: 40,
+    globalText: getRandomPangram(),
+    rows: 25,
+    currentPage: 1,
+    dirname: null,
+    hasDefaults: true,
+    fonts: initialFonts,
+    convertedMessage: null,
+  });
+
+  const context = {
+    useLoad: () =>
+      React.useEffect(() => {
+        load();
+      }, []),
+    getFont: _getFont,
+    setFonts,
+    portion,
+    setPortion,
+    convertedMessage,
+    setConvertedMessage,
+    load: load,
+    portionate: _portionateFonts,
+    destroy: _delete,
+    hasDefaults: hasDefaults,
+    fonts: loadedFonts,
+    resetFontList,
+    state,
+    setState,
+  };
+
+  return (
+    <FontsContext.Provider value={context as any}>
+      {props.children}
+    </FontsContext.Provider>
+  );
+
+  function resetFontList() {
+    setFonts(initialFonts);
+    setHasDefaults(true);
+  }
 
   async function load() {
     // const loaded = await _portionateFonts(0, portion);
@@ -39,39 +123,16 @@ export function FontsProvider(props: any) {
         console.log("BLOEKED");
       },
     });
-    setFonts(initialFonts);
-    setHasDefaults(true);
-    setDirname(null);
+    setState((s) => ({
+      ...s,
+      fonts: initialFonts,
+      hasDefaults: true,
+      dirname: null,
+    }));
   }
-
-  const value = {
-    useLoad: () =>
-      React.useEffect(() => {
-        load();
-      }, []),
-    getFont: _getFont,
-    setFonts: setFonts,
-    portion: portion,
-    setRows: setPortion,
-    convertedMessage,
-    setConvertedMessage,
-    load: load,
-    portionate: _portionateFonts,
-    destroy: _delete,
-    hasDefaults: hasDefaults,
-    fonts: loadedFonts,
-    dirname,
-    setDirname,
-  };
-
-  return (
-    <FontsContext.Provider value={value}>
-      {props.children}
-    </FontsContext.Provider>
-  );
 }
 
-export function useFonts() {
+export function useFontsContext() {
   return useContext(FontsContext);
 }
 
