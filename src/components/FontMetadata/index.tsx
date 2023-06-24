@@ -41,13 +41,33 @@ export default function FontMetadata(props: any) {
 }
 
 function LinkOrText(props: any) {
-  if (props.value.startsWith("http")) {
+  console.log("LinkOrText", props);
+  if (isValidHttpUrl(props.value)) {
     return (
-      <a target="_blank" className={styles.value} href={props.value}>
+      <a target="_blank" className={styles.value} href={checkWWW(props.value)}>
         {props.value}
       </a>
     );
   } else {
     return <span className={styles.value}>{props.value}</span>;
   }
+}
+
+function checkWWW(str: string) {
+  if (str.startsWith("www")) {
+    str = "http://" + str;
+  }
+  return str;
+}
+
+function isValidHttpUrl(str: string): boolean {
+  let url;
+  str = checkWWW(str);
+  try {
+    url = new URL(str);
+    console.log("URL", url);
+  } catch (_) {
+    return false;
+  }
+  return url.protocol === "http:" || url.protocol === "https:";
 }
