@@ -1,31 +1,21 @@
 import { convertSingleFile } from "../../tools/utils";
-import { useFontsContext } from "../../contexts/FontsContext";
+import { FontItem, useFontsContext } from "../../contexts/FontsContext";
 import { camelToSentence } from "../../library/utils";
 import styles from "./font-convert-button.module.scss";
 import Dropdown from "../Dropdown/index";
 import Icon from "../Icon/index";
+import React from "react";
+import { Format } from "../../tools/format";
 
-export default function FontConvertButton(props) {
+export default function FontConvertButton(props: FontItem) {
   const { getFont, setConvertedMessage } = useFontsContext();
+  console.log("FontConvertButton", props);
   const [converted, setConverted] = React.useState(null);
-  const [selectedFormat, setSelectedFormat] = React.useState(
-    props.font.ext === "woff2" ||
-      props.font.ext === "woff" ||
-      props.font.ext === "ttf"
+  const [selectedFormat, setSelectedFormat] = React.useState<any>(
+    props.ext === "woff2" || props.ext === "woff" || props.ext === "ttf"
       ? "otf"
       : "woff"
   );
-
-  async function handleConvert(e) {
-    if (!selectedFormat) {
-      throw "Select format please..";
-    }
-    const fetched = await getFont(props.id);
-    console.log("handleConvert::fetched", fetched);
-    const newConverted = await convertSingleFile(fetched.file, selectedFormat);
-    console.log("handleConvert::converted", newConverted);
-    setConverted(newConverted);
-  }
 
   React.useEffect(() => {
     if (converted) {
@@ -44,16 +34,12 @@ export default function FontConvertButton(props) {
     }
   }, [converted]);
 
-  function handleOptionSelect(e) {
-    setSelectedFormat(e.target.innerText.toLowerCase());
-  }
-
   const convertOpts =
-    props.font.ext === "woff2"
+    props.ext === "woff2"
       ? ["OTF", "WOFF"]
-      : props.font.ext === "woff"
+      : props.ext === "woff"
       ? ["OTF", "WOFF2"]
-      : props.font.ext === "ttf"
+      : props.ext === "ttf"
       ? ["OTF", "WOFF", "WOFF2"]
       : ["WOFF", "WOFF2"];
 
@@ -82,4 +68,21 @@ export default function FontConvertButton(props) {
       )}
     </div>
   );
+
+  function handleOptionSelect(
+    e: React.MouseEvent<HTMLSpanElement, MouseEvent>
+  ) {
+    setSelectedFormat((e.target as HTMLSpanElement).innerText.toLowerCase());
+  }
+
+  async function handleConvert() {
+    if (!selectedFormat) {
+      throw "Select format please..";
+    }
+    const fetched = await getFont(props.id);
+    console.log("handleConvert::fetched", fetched);
+    const newConverted = await convertSingleFile(fetched.file, selectedFormat);
+    console.log("handleConvert::converted", newConverted);
+    setConverted(newConverted);
+  }
 }

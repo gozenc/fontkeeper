@@ -29,7 +29,8 @@ export interface FontkeeperContext extends FontkeeperState {
   setState: React.Dispatch<React.SetStateAction<FontkeeperState>>;
   resetFontList: () => void;
   useLoad: () => void;
-  // getFont: getFont;
+  setConvertedMessage: React.Dispatch<React.SetStateAction<string | null>>;
+  getFont: (id: string) => Promise<FontItem>;
   // setFonts;
   // portion;
   // setPortion;
@@ -135,7 +136,7 @@ export function useFontsContext() {
 async function getFont(id: string) {
   const db = await openDB(dbname, 1);
   const store = db.transaction("fonts").objectStore("fonts");
-  return await store.get(id);
+  return (await store.get(id)) as FontItem;
 }
 
 async function portionateFonts(

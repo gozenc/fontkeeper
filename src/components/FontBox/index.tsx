@@ -2,16 +2,11 @@ import Stat from "../Stat";
 import Range from "../Range";
 import { Link } from "react-router-dom";
 import styles from "./font-box.module.scss";
-import { useFontsContext } from "../../contexts/FontsContext";
+import { FontItem, useFontsContext } from "../../contexts/FontsContext";
 import FontConvertButton from "../FontConvertButton/index";
-import { FontRecord } from "../../library/fonts";
 import React from "react";
 
-export default function FontBox(props: {
-  id: string;
-  name: string;
-  font: FontRecord;
-}) {
+export default function FontBox(props: FontItem) {
   const { hasDefaults, state } = useFontsContext();
   const [value, setValue] = React.useState(state.globalText);
   const [size, setSize] = React.useState(state.globalFontSize);
@@ -31,13 +26,7 @@ export default function FontBox(props: {
         <Link to={`/font/${props.id}`}>
           <h3>{props.name}</h3>
         </Link>
-        {!hasDefaults && (
-          <FontConvertButton
-            font={props.font}
-            name={props.name}
-            id={props.id}
-          />
-        )}
+        {!hasDefaults && <FontConvertButton {...props} />}
       </div>
       <div className={styles.value}>
         <input

@@ -8,7 +8,7 @@ export default function FontTable() {
   return (
     <section className={styles.table}>
       {state.fonts.map((font: any, i: number) => (
-        <FontBox id={font.id} font={font} name={font.name} key={i} />
+        <FontBox {...font} key={i} />
       ))}
     </section>
   );
