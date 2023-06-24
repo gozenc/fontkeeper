@@ -4,7 +4,7 @@ import "./style.scss";
 interface DropdownProps {
   selected?: string | number;
   options: string[] | number[];
-  onSelect?: (e: React.MouseEvent<HTMLSpanElement, MouseEvent>) => void;
+  onSelect?: (value: string) => void;
 }
 
 export default function Dropdown(props: DropdownProps) {
@@ -34,8 +34,9 @@ export default function Dropdown(props: DropdownProps) {
       <span
         key={i}
         onClick={(e) => {
-          setSelected((e.target as HTMLSpanElement).innerText);
-          return props.onSelect ? props.onSelect(e) : undefined;
+          const value = (e.target as HTMLSpanElement).innerText;
+          setSelected(value);
+          return props.onSelect ? props.onSelect(value) : undefined;
         }}
         className={`dropdown__option${opt == selected ? " selected" : ""}`}
       >

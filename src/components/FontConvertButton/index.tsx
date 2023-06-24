@@ -69,10 +69,8 @@ export default function FontConvertButton(props: FontItem) {
     </div>
   );
 
-  function handleOptionSelect(
-    e: React.MouseEvent<HTMLSpanElement, MouseEvent>
-  ) {
-    setSelectedFormat((e.target as HTMLSpanElement).innerText.toLowerCase());
+  function handleOptionSelect(val: string) {
+    setSelectedFormat(val.toLowerCase());
   }
 
   async function handleConvert() {

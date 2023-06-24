@@ -31,6 +31,7 @@ export interface FontkeeperContext extends FontkeeperState {
   useLoad: () => void;
   setConvertedMessage: React.Dispatch<React.SetStateAction<string | null>>;
   getFont: (id: string) => Promise<FontItem>;
+  loadedFonts: FontItem[];
   // setFonts;
   // portion;
   // setPortion;
@@ -70,6 +71,8 @@ export function FontsProvider(props: React.PropsWithChildren) {
   const [portion, setPortion] = useState(10);
   const [convertedMessage, setConvertedMessage] = React.useState(null);
 
+  const [loadedFonts, setLoadedFonts] =
+    React.useState<FontItem[]>(initialFonts);
   const [state, setState] = React.useState<FontkeeperState>(initialState);
 
   const context = {
@@ -83,6 +86,7 @@ export function FontsProvider(props: React.PropsWithChildren) {
     convertedMessage,
     setConvertedMessage,
     load: loadFonts,
+    loadedFonts,
     portionate: portionateFonts,
     destroy: _delete,
     resetFontList,
@@ -107,6 +111,7 @@ export function FontsProvider(props: React.PropsWithChildren) {
     if (loaded.length > 0) {
       await fonts.load(loaded);
       console.log(loaded);
+      setLoadedFonts(loaded);
       setState((s) => ({ ...s, fonts: loaded, hasDefaults: false }));
     } else {
       setState((s) => ({ ...s, hasDefaults: false }));
