@@ -19,7 +19,7 @@ export default function FontPicker() {
     <div
       data-message={
         state.dirname === null
-          ? "Select a directory"
+          ? "Choose a directory with fonts"
           : `Loaded: ${state.dirname}`
       }
       className={styles.container}
