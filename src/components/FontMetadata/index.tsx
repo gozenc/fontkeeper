@@ -41,7 +41,6 @@ export default function FontMetadata(props: any) {
 }
 
 function LinkOrText(props: any) {
-  console.log("LinkOrText", props);
   if (isValidHttpUrl(props.value)) {
     return (
       <a target="_blank" className={styles.value} href={checkWWW(props.value)}>

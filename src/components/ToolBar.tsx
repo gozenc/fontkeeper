@@ -61,19 +61,20 @@ export default function ToolBar() {
             options={[8, 12, 14, 20, 24, 32, 40, 64, 96]}
             selected={state.globalFontSize}
           />
-          {/* <Dropdown options={["px", "rem", "pt"]}/> */}
+          {/* <Dropdown options={["px", "rem", "pt"]} /> */}
           <Range
+            title="Set font size"
             onInput={(e: any) => setGlobalFontSize(e.currentTarget.value)}
             min="4"
             max="96"
             value={state.globalFontSize}
           />
         </div>
-        <div className="toolbar__reset">
-          <Icon type="button" name="refresh" />
+        <div title="Reset UI settings" className="toolbar__reset">
+          <Icon onClick={handleReset} type="button" name="refresh" />
         </div>
-        <div className="toolbar__delete">
-          <Icon onClick={destroy} type="button" name="delete" />
+        <div title="Delete all fonts" className="toolbar__delete">
+          <Icon onClick={handleDestroy} type="button" name="delete" />
         </div>
       </div>
       <Pagination
@@ -84,6 +85,14 @@ export default function ToolBar() {
       />
     </section>
   );
+
+  function handleReset() {
+    setState((s) => ({
+      ...s,
+      globalFontSize: 40,
+      globalText: getRandomPangram(),
+    }));
+  }
 
   function handleSearch(e: React.ChangeEvent<HTMLInputElement>) {
     const value = e.target.value;
@@ -132,7 +141,7 @@ export default function ToolBar() {
     }));
   }
 
-  async function destroy() {
+  async function handleDestroy() {
     await deleteDB(dbname, {
       blocked() {
         resetFontList();

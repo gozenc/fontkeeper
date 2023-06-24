@@ -5,11 +5,9 @@ import styles from "./font-convert-button.module.scss";
 import Dropdown from "../Dropdown/index";
 import Icon from "../Icon/index";
 import React from "react";
-import { Format } from "../../tools/format";
 
 export default function FontConvertButton(props: FontItem) {
   const { getFont, setConvertedMessage } = useFontsContext();
-  console.log("FontConvertButton", props);
   const [converted, setConverted] = React.useState(null);
   const [selectedFormat, setSelectedFormat] = React.useState<any>(
     props.ext === "woff2" || props.ext === "woff" || props.ext === "ttf"

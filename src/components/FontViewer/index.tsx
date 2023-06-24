@@ -33,7 +33,6 @@ export default function FontViewer() {
   );
 }
 
-function FontLoading(props: any) {
-  debuggy("FONT_LOADING", props);
+function FontLoading() {
   return <div className={styles.loading}>Loading font...</div>;
 }
