@@ -14,6 +14,7 @@ export default {
  * @property {string} id - Unique font ID.
  * @property {string} name - Unique font name.
  * @property {ArrayBuffer} buffer - Font file buffer
+ * @property {File} file - Font file buffer
  * @property {string} ext - Font extension
  */
 
@@ -43,6 +44,7 @@ async function collect(event) {
     fonts = await Promise.all(files.sort((a, b) => a - b).map(makeRecord));
   await Database.put(dirname, "dirname", "config");
   await Database.put(fonts);
+  console.log("collect", fonts);
   return { fonts: fonts, dir: dirname };
 }
 

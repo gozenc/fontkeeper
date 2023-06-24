@@ -5,17 +5,11 @@ import database from "../library/database";
 import { dbname } from "../store/constants";
 import getRandomPangram from "../library/pangram";
 
-const initialFonts = [
-  { name: "sans-serif", id: 1 },
-  { name: "serif", id: 2 },
-  { name: "monospace", id: 3 },
-];
-
 export interface FontItem {
-  buffer: Uint8Array;
-  ext: string;
-  file: File;
   id: string;
+  buffer: Uint8Array | null;
+  ext: string;
+  file: File | null;
   name: string;
 }
 
@@ -25,7 +19,7 @@ export interface FontkeeperState {
   dirname: string | null;
   rows: number;
   currentPage: number;
-  fonts: { name: string; id: number | string }[];
+  fonts: FontItem[];
   hasDefaults: boolean;
   convertedMessage: string | null;
 }
@@ -35,14 +29,14 @@ export interface FontkeeperContext extends FontkeeperState {
   setState: React.Dispatch<React.SetStateAction<FontkeeperState>>;
   resetFontList: () => void;
   useLoad: () => void;
-  // getFont: _getFont;
+  // getFont: getFont;
   // setFonts;
   // portion;
   // setPortion;
   // convertedMessage;
   // setConvertedMessage;
   // load: load;
-  // portionate: _portionateFonts;
+  // portionate: portionateFonts;
   // destroy: _delete;
   // hasDefaults: hasDefaults;
   // fonts: loadedFonts;
@@ -52,41 +46,44 @@ export interface FontkeeperContext extends FontkeeperState {
   // setState;
 }
 
+const initialFonts: FontItem[] = [
+  { name: "sans-serif", id: "1", buffer: null, ext: "", file: null },
+  { name: "serif", id: "2", buffer: null, ext: "", file: null },
+  { name: "monospace", id: "3", buffer: null, ext: "", file: null },
+];
+
+const initialState: FontkeeperState = {
+  globalFontSize: 40,
+  globalText: getRandomPangram(),
+  rows: 25,
+  currentPage: 1,
+  dirname: null,
+  hasDefaults: true,
+  fonts: initialFonts,
+  convertedMessage: null,
+};
+
 export const FontsContext = React.createContext({} as FontkeeperContext);
 
 export function FontsProvider(props: React.PropsWithChildren) {
-  const [loadedFonts, setFonts] = useState(initialFonts);
   const [portion, setPortion] = useState(10);
-  const [hasDefaults, setHasDefaults] = useState<boolean>(true);
   const [convertedMessage, setConvertedMessage] = React.useState(null);
 
-  const [state, setState] = React.useState<FontkeeperState>({
-    globalFontSize: 40,
-    globalText: getRandomPangram(),
-    rows: 25,
-    currentPage: 1,
-    dirname: null,
-    hasDefaults: true,
-    fonts: initialFonts,
-    convertedMessage: null,
-  });
+  const [state, setState] = React.useState<FontkeeperState>(initialState);
 
   const context = {
     useLoad: () =>
       React.useEffect(() => {
-        load();
+        loadFonts();
       }, []),
-    getFont: _getFont,
-    setFonts,
+    getFont: getFont,
     portion,
     setPortion,
     convertedMessage,
     setConvertedMessage,
-    load: load,
-    portionate: _portionateFonts,
+    load: loadFonts,
+    portionate: portionateFonts,
     destroy: _delete,
-    hasDefaults: hasDefaults,
-    fonts: loadedFonts,
     resetFontList,
     state,
     setState,
@@ -99,20 +96,19 @@ export function FontsProvider(props: React.PropsWithChildren) {
   );
 
   function resetFontList() {
-    setFonts(initialFonts);
-    setHasDefaults(true);
+    setState((s) => ({ ...s, fonts: initialFonts, hasDefaults: false }));
   }
 
-  async function load() {
-    // const loaded = await _portionateFonts(0, portion);
+  async function loadFonts() {
+    // const loaded = await portionateFonts(0, portion);
     console.log("Runs.load");
     const loaded = await database.getAll("fonts");
     if (loaded.length > 0) {
       await fonts.load(loaded);
-      setFonts(loaded);
-      setHasDefaults(false);
+      console.log(loaded);
+      setState((s) => ({ ...s, fonts: loaded, hasDefaults: false }));
     } else {
-      setHasDefaults(true);
+      setState((s) => ({ ...s, hasDefaults: false }));
     }
   }
 
@@ -136,13 +132,13 @@ export function useFontsContext() {
   return useContext(FontsContext);
 }
 
-async function _getFont(id: string) {
+async function getFont(id: string) {
   const db = await openDB(dbname, 1);
   const store = db.transaction("fonts").objectStore("fonts");
   return await store.get(id);
 }
 
-async function _portionateFonts(
+async function portionateFonts(
   portion: number,
   limit: number,
   db: IDBPDatabase
@@ -165,7 +161,7 @@ async function _portionateFonts(
     }
     return fonts;
   } catch (err) {
-    console.error("_portionateFonts.err", err);
+    console.error("portionateFonts.err", err);
     return [];
   }
 }

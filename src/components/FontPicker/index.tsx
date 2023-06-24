@@ -1,6 +1,6 @@
 import styles from "./font-picker.module.scss";
 import FontTools from "../../library/fonts";
-import { useFontsContext } from "../../contexts/FontsContext";
+import { FontItem, useFontsContext } from "../../contexts/FontsContext";
 import React from "react";
 
 export default function FontPicker() {
@@ -39,6 +39,6 @@ export default function FontPicker() {
     if (e.target.files.length === 0) return;
     const { fonts, dir } = await FontTools.collect(e);
     await FontTools.load(fonts);
-    setState((s) => ({ ...s, fonts, dirname: dir }));
+    setState((s) => ({ ...s, fonts: fonts as FontItem[], dirname: dir }));
   }
 }

@@ -11,7 +11,7 @@ import { deleteDB } from "idb";
 import { dbname } from "../store/constants";
 
 export default function ToolBar() {
-  const { fonts, resetFontList, state, setState } = useFontsContext();
+  const { resetFontList, state, setState } = useFontsContext();
   const toolbarRef = React.useRef(null);
   const isSticky = useStickyObserver(`.${appbarStyles.appbar}`);
 
@@ -71,7 +71,7 @@ export default function ToolBar() {
       <Pagination
         onRowSelect={(rows: any) => setState((s) => ({ ...s, rows }))}
         className="toolbar__pagination"
-        data={fonts}
+        data={state.fonts}
         rows={[10, 25, 50, 75, 100]}
       />
     </section>
