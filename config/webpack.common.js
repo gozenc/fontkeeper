@@ -63,12 +63,12 @@ module.exports = {
       },
       {
         test: /\.csv$/,
-        loader: 'csv-loader',
+        loader: "csv-loader",
         options: {
           dynamicTyping: true,
           header: true,
-          skipEmptyLines: true
-        }
+          skipEmptyLines: true,
+        },
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
@@ -79,12 +79,12 @@ module.exports = {
         type: "asset/resource",
         generator: {
           filename: `static/fonts/[name].${process.env["BUILD_HASH"]}[ext]`,
-        }
+        },
       },
       {
         test: /\.svg$/,
-        type: 'asset/resource',
-        use: 'svgo-loader'
+        type: "asset/resource",
+        use: "svgo-loader",
       },
     ],
   },

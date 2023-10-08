@@ -8,6 +8,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 const path = require("path");
 const styleConfig = require("./webpack.styles");
 const crypto = require("crypto");
+const path = require("path");
 
 module.exports = merge(common, {
   mode: "production",
@@ -18,7 +19,7 @@ module.exports = merge(common, {
     clean: true,
     filename: `static/js/[name].${process.env["BUILD_HASH"]}.js`,
     chunkFilename: `static/js/[name].${process.env["BUILD_HASH"]}.chunk.js`,
-    assetModuleFilename: `static/assets/[name].${process.env["BUILD_HASH"]}[ext]`
+    assetModuleFilename: `static/assets/[name].${process.env["BUILD_HASH"]}[ext]`,
   },
   resolve: {
     alias: {
@@ -35,9 +36,6 @@ module.exports = merge(common, {
             loader: MiniCssExtractPlugin.loader,
           },
           styleConfig.cssLoaderModule,
-          {
-            loader: "resolve-url-loader",
-          },
           {
             loader: "sass-loader",
             options: {
@@ -57,7 +55,23 @@ module.exports = merge(common, {
             loader: MiniCssExtractPlugin.loader,
           },
           styleConfig.cssLoaderDefault,
-          { loader: "sass-loader", options: { sourceMap: true } },
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                config: path.resolve(__dirname, "postcss.config.js"),
+              },
+            },
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true,
+              sassOptions: {
+                outputStyle: "compressed",
+              },
+            },
+          },
         ],
       },
     ],
